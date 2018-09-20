@@ -1,0 +1,1482 @@
+---------------------------------------------------------------
+[ 2018-09-18T23:56:47+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021748s] [吞吐率：45.98req/s] [内存消耗：3,181.45kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000335s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9915 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.002579s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:56:51+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/index/turnout
+[运行时间：0.023466s] [吞吐率：42.62req/s] [内存消耗：3,183.07kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/turnout.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000332s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:56:57+08:00 ] 223.104.6.17 POST yiwuqianbao.com/mobile/Index/turnout
+[运行时间：0.048129s] [吞吐率：20.78req/s] [内存消耗：3,150.00kb] [文件加载：84]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index/turnout',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '11',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '9923',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname` FROM `zm_user` WHERE  ( `id` = 9923 OR `mobile` = '9923' ) LIMIT 1 [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:56:58+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/Index/changeout/trid/9923
+[运行时间：0.020518s] [吞吐率：48.74req/s] [内存消耗：3,230.06kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index/turnout',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'trid' => '9923',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/changeout.html [ array (
+  0 => 'user',
+  1 => 'transfer',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000291s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `id`,`mobile`,`head_img`,`nickname` FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 20 LIMIT 1 [ RunTime:0.000144s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:16+08:00 ] 223.104.6.17 POST yiwuqianbao.com/mobile/Index/Changeout
+[运行时间：0.067579s] [吞吐率：14.80req/s] [内存消耗：3,445.98kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/Index/changeout/trid/9923',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '88',
+)
+[ info ] [ PARAM ] array (
+  'post_data' => 
+  array (
+    'paynums' => '46',
+    'trid' => '9923',
+    'mobile' => '6577',
+  ),
+  'pwd' => '760206',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT `id`,`mobile`,`head_img`,`nickname` FROM `zm_user` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 20 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT `mobile` FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `safety_pwd` FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `wallet_num` = 0.2461 , `integral_num` = 15343.3574  WHERE  `uid` = 9915 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9915 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000308s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `before_wallet` , `now_wallet` , `type` , `second_people_id` , `create_time`) VALUES (9915 , 46 , 46.2461 , 0.2461 , 1 , 9923 , 1537286236) [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000244s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `before_integral` , `now_integral` , `type` , `create_time`) VALUES (9915 , 36.8 , 15306.5574 , 15343.3574 , 9 , 1537286236) [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `wallet_num` = `wallet_num` + 36.8  WHERE  `uid` = 9923 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = `integral_num` + 9.2  WHERE  `uid` = 9923 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9923 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `before_wallet` , `now_wallet` , `type` , `second_people_id` , `create_time`) VALUES (9923 , 36.8 , 0.486 , 37.286 , 2 , 9915 , 1537286236) [ RunTime:0.000117s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `before_integral` , `now_integral` , `type` , `create_time`) VALUES (9923 , 9.2 , 84771.2326 , 84780.4326 , 9 , 1537286236) [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `zm_reward` WHERE  `group` = 3 ORDER BY `id` ASC [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 17 ORDER BY `id` ASC [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 22 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `path` FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9873 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9873 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9971 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 26863.6756 , `wallet_num` = 0.9298  WHERE  `uid` = 9873 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9873 , -0.46 , 4 , 26864.1356 , 26863.6756 , 1537286236) [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9873 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9873 , 0.46 , 8 , 0.4698 , 0.9298 , 1537286236) [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9450 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9450 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9505 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9655 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9829 LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9903 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9991 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 1004007.0543 , `wallet_num` = 28.9924  WHERE  `uid` = 9450 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9450 , -0.46 , 4 , 1004007.5143 , 1004007.0543 , 1537286236) [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9450 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9450 , 0.46 , 8 , 28.5324 , 28.9924 , 1537286236) [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9255 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9255 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9448 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9481 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9482 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9483 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 6078.5719 , `wallet_num` = 12042.0953  WHERE  `uid` = 9255 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9255 , -0.46 , 4 , 6079.0319 , 6078.5719 , 1537286236) [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9255 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9255 , 0.46 , 8 , 12041.6353 , 12042.0953 , 1537286236) [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9115 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9117 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9245 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9246 LIMIT 1 [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9247 LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9251 LIMIT 1 [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9265 LIMIT 1 [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9282 LIMIT 1 [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9283 LIMIT 1 [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9479 LIMIT 1 [ RunTime:0.000081s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 692475.9209 , `wallet_num` = 48157.8794  WHERE  `uid` = 9115 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9115 , -0.46 , 4 , 692476.3809 , 692475.9209 , 1537286236) [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9115 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9115 , 0.46 , 8 , 48157.4194 , 48157.8794 , 1537286236) [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9108 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9108 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9119 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9253 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9306 LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9350 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9476 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 1113024.9615 , `wallet_num` = 21812.5213  WHERE  `uid` = 9108 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9108 , -0.46 , 4 , 1113025.4215 , 1113024.9615 , 1537286236) [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9108 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9108 , 0.46 , 8 , 21812.0613 , 21812.5213 , 1537286236) [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9101 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9101 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9103 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9104 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9105 LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9106 LIMIT 1 [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9107 LIMIT 1 [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9109 LIMIT 1 [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 10130 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 3150203.0603 , `wallet_num` = 6858735.1378  WHERE  `uid` = 9101 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9101 , -0.46 , 4 , 3150203.5203 , 3150203.0603 , 1537286236) [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9101 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9101 , 0.46 , 8 , 6858734.6778 , 6858735.1378 , 1537286236) [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 8596 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 8596 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9102 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 10088 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 0 , `wallet_num` = 0  WHERE  `uid` = 8596 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (8596 , 0 , 4 , NULL , 0 , 1537286236) [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 8596 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (8596 , 0 , 8 , NULL , 0 , 1537286236) [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 24 ORDER BY `id` ASC [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `path` FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9873 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9873 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9450 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9450 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = `integral_num` + 3.68  WHERE  `uid` = 9450 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9450 , 3.68 , 5 , 1004007.0543 , 1004010.7343 , 1537286236) [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9450 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9255 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9255 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9115 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9108 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9108 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = `integral_num` + 0.92  WHERE  `uid` = 9108 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9108 , 0.92 , 5 , 1113024.9615 , 1113025.8815 , 1537286236) [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9108 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9101 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9101 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 8596 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 8596 LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000090s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:17+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/Index/index
+[运行时间：0.032313s] [吞吐率：30.95req/s] [内存消耗：3,325.10kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/Index/changeout/trid/9923',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9915  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009871s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:18+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021856s] [吞吐率：45.75req/s] [内存消耗：3,181.50kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/Index/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000323s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9915 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.002613s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:23+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/user/index
+[运行时间：0.020656s] [吞吐率：48.41req/s] [内存消耗：3,234.05kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/user/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'userlevel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9915 LIMIT 1 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:28+08:00 ] 223.104.6.17 POST yiwuqianbao.com/mobile/login/logout
+[运行时间：0.018816s] [吞吐率：53.15req/s] [内存消耗：3,185.42kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/user/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000319s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000256s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:30+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.019450s] [吞吐率：51.41req/s] [内存消耗：3,194.06kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/user/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000333s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000162s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:46+08:00 ] 223.104.6.17 POST yiwuqianbao.com/mobile/login/dologin
+[运行时间：0.019702s] [吞吐率：50.76req/s] [内存消耗：3,161.80kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/login/login',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '25',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '9923',
+  'pwd' => 'lqh760206',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `mobile` = '9923' OR `id` = 9923 LIMIT 1 [ RunTime:0.000366s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:48+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/index
+[运行时间：0.082381s] [吞吐率：12.14req/s] [内存消耗：3,325.09kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000598s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9923  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.014959s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:48+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.025188s] [吞吐率：39.70req/s] [内存消耗：3,181.67kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9923 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.002525s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:57:52+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/Index/exehange
+[运行时间：0.020730s] [吞吐率：48.24req/s] [内存消耗：3,221.97kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/exehange.html [ array (
+  0 => 'ratio',
+  1 => 'money',
+  2 => 'exchange',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 9 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 21 LIMIT 1 [ RunTime:0.000106s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:05+08:00 ] 223.104.6.17 POST yiwuqianbao.com/mobile/Index/Exehange
+[运行时间：0.137212s] [吞吐率：7.29req/s] [内存消耗：3,407.78kb] [文件加载：94]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/Index/exehange',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '20',
+)
+[ info ] [ PARAM ] array (
+  'dhnums' => '37',
+  'pwd' => '760206',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 9 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 21 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT `safety_pwd` FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 85002.4326 , `wallet_num` = 0.286  WHERE  `uid` = 9923 [ RunTime:0.003436s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9923 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000279s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9923 , 222 , 8 , 84780.4326 , 85002.4326 , 1537286285) [ RunTime:0.002615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000274s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9923 , -37 , 3 , 37.286 , 0.286 , 1537286285) [ RunTime:0.002643s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 25 ORDER BY `id` ASC [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 22 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `user_grade` FROM `zm_user_level` WHERE  `userid` = 9915 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9915 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9917 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9938 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 15340.3974 , `wallet_num` = 3.2061  WHERE  `uid` = 9915 [ RunTime:0.002413s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9915 , -2.96 , 2 , 15343.3574 , 15340.3974 , 1537286285) [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9915 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9915 , 2.96 , 6 , 0.2461 , 3.2061 , 1537286285) [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `zm_reward` WHERE  `group` = 18 ORDER BY `id` ASC [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 19 ORDER BY `id` ASC [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 22 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `path` FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9915 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9917 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9938 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 15340.0274 , `wallet_num` = 3.5761  WHERE  `uid` = 9915 [ RunTime:0.002371s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9915 , -0.37 , 3 , 15340.3974 , 15340.0274 , 1537286285) [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9915 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9915 , 0.37 , 7 , 3.2061 , 3.5761 , 1537286285) [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9873 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9873 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9971 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 26863.3056 , `wallet_num` = 1.2998  WHERE  `uid` = 9873 [ RunTime:0.002445s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9873 , -0.37 , 3 , 26863.6756 , 26863.3056 , 1537286285) [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9873 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9873 , 0.37 , 7 , 0.9298 , 1.2998 , 1537286285) [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9450 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9450 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9505 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9655 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9829 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9903 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9991 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 1004010.3643 , `wallet_num` = 29.3624  WHERE  `uid` = 9450 [ RunTime:0.002401s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9450 , -0.37 , 3 , 1004010.7343 , 1004010.3643 , 1537286285) [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9450 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9450 , 0.37 , 7 , 28.9924 , 29.3624 , 1537286285) [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9255 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9255 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9448 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9481 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9482 LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9483 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 6078.2019 , `wallet_num` = 12042.4653  WHERE  `uid` = 9255 [ RunTime:0.002417s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9255 , -0.37 , 3 , 6078.5719 , 6078.2019 , 1537286285) [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9255 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9255 , 0.37 , 7 , 12042.0953 , 12042.4653 , 1537286285) [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9115 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9117 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9245 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9246 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9247 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9251 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9265 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9282 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9283 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9479 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 692475.5509 , `wallet_num` = 48158.2494  WHERE  `uid` = 9115 [ RunTime:0.002315s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9115 , -0.37 , 3 , 692475.9209 , 692475.5509 , 1537286285) [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9115 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9115 , 0.37 , 7 , 48157.8794 , 48158.2494 , 1537286285) [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9108 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9108 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9119 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9253 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9306 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9350 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9476 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 1113025.5115 , `wallet_num` = 21812.8913  WHERE  `uid` = 9108 [ RunTime:0.002340s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9108 , -0.37 , 3 , 1113025.8815 , 1113025.5115 , 1537286285) [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9108 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9108 , 0.37 , 7 , 21812.5213 , 21812.8913 , 1537286285) [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9101 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9101 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9103 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9104 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9105 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9106 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9107 LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9109 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 10130 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 3150202.6903 , `wallet_num` = 6858735.5078  WHERE  `uid` = 9101 [ RunTime:0.002366s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9101 , -0.37 , 3 , 3150203.0603 , 3150202.6903 , 1537286285) [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9101 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9101 , 0.37 , 7 , 6858735.1378 , 6858735.5078 , 1537286285) [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 8596 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 8596 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9102 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 10088 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 0 , `wallet_num` = 0  WHERE  `uid` = 8596 [ RunTime:0.002432s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (8596 , 0 , 3 , NULL , 0 , 1537286285) [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 8596 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (8596 , 0 , 7 , NULL , 0 , 1537286285) [ RunTime:0.000136s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:07+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/Index/exehange
+[运行时间：0.060593s] [吞吐率：16.50req/s] [内存消耗：3,222.09kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/Index/exehange',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/exehange.html [ array (
+  0 => 'ratio',
+  1 => 'money',
+  2 => 'exchange',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 9 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 21 LIMIT 1 [ RunTime:0.000224s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:23+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/index
+[运行时间：0.077207s] [吞吐率：12.95req/s] [内存消耗：3,325.09kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9923 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9923  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.017250s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:23+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.025500s] [吞吐率：39.22req/s] [内存消耗：3,181.67kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9923 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.002591s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:25+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/user/index
+[运行时间：0.024801s] [吞吐率：40.32req/s] [内存消耗：3,234.16kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/user/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'userlevel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9923 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9923 LIMIT 1 [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:27+08:00 ] 223.104.6.17 POST yiwuqianbao.com/mobile/login/logout
+[运行时间：0.024140s] [吞吐率：41.42req/s] [内存消耗：3,185.42kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/user/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000189s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:29+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.022985s] [吞吐率：43.51req/s] [内存消耗：3,194.06kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/user/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000331s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:45+08:00 ] 223.104.6.17 POST yiwuqianbao.com/mobile/login/dologin
+[运行时间：0.056469s] [吞吐率：17.71req/s] [内存消耗：3,161.78kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/login/login',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '25',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '9915',
+  'pwd' => 'lqh760206',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000415s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `mobile` = '9915' OR `id` = 9915 LIMIT 1 [ RunTime:0.000454s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:47+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/index
+[运行时间：0.077554s] [吞吐率：12.89req/s] [内存消耗：3,324.98kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9915  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.013859s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:48+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.034166s] [吞吐率：29.27req/s] [内存消耗：3,181.66kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000360s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9915 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.003352s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:58:52+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/Index/exehange
+[运行时间：0.031522s] [吞吐率：31.72req/s] [内存消耗：3,221.97kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/exehange.html [ array (
+  0 => 'ratio',
+  1 => 'money',
+  2 => 'exchange',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 9 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 21 LIMIT 1 [ RunTime:0.000131s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:04+08:00 ] 223.104.6.17 POST yiwuqianbao.com/mobile/Index/Exehange
+[运行时间：0.137764s] [吞吐率：7.26req/s] [内存消耗：3,403.67kb] [文件加载：94]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/Index/exehange',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'dhnums' => '3',
+  'pwd' => '760206',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000408s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 9 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 21 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `safety_pwd` FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 15358.0274 , `wallet_num` = 0.5761  WHERE  `uid` = 9915 [ RunTime:0.003477s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9915 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000263s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9915 , 18 , 8 , 15340.0274 , 15358.0274 , 1537286343) [ RunTime:0.002653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9915 , -3 , 3 , 3.5761 , 0.5761 , 1537286343) [ RunTime:0.002746s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 25 ORDER BY `id` ASC [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 22 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9873 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT `user_grade` FROM `zm_user_level` WHERE  `userid` = 9873 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9873 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9971 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 26863.0656 , `wallet_num` = 1.5398  WHERE  `uid` = 9873 [ RunTime:0.002418s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9873 , -0.24 , 2 , 26863.3056 , 26863.0656 , 1537286344) [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9873 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9873 , 0.24 , 6 , 1.2998 , 1.5398 , 1537286344) [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `zm_reward` WHERE  `group` = 18 ORDER BY `id` ASC [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 19 ORDER BY `id` ASC [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 22 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `path` FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9873 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9873 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9971 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 26863.0356 , `wallet_num` = 1.5698  WHERE  `uid` = 9873 [ RunTime:0.002426s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9873 , -0.03 , 3 , 26863.0656 , 26863.0356 , 1537286344) [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9873 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9873 , 0.03 , 7 , 1.5398 , 1.5698 , 1537286344) [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9450 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9450 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9505 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9655 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9829 LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9873 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9903 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9991 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 1004010.3343 , `wallet_num` = 29.3924  WHERE  `uid` = 9450 [ RunTime:0.002446s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9450 , -0.03 , 3 , 1004010.3643 , 1004010.3343 , 1537286344) [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9450 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9450 , 0.03 , 7 , 29.3624 , 29.3924 , 1537286344) [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9255 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9255 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9448 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9450 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9481 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9482 LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9483 LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 6078.1719 , `wallet_num` = 12042.4953  WHERE  `uid` = 9255 [ RunTime:0.002413s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9255 , -0.03 , 3 , 6078.2019 , 6078.1719 , 1537286344) [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9255 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9255 , 0.03 , 7 , 12042.4653 , 12042.4953 , 1537286344) [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9115 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9117 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9245 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9246 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9247 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9251 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9255 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9265 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9282 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9283 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9479 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 692475.5209 , `wallet_num` = 48158.2794  WHERE  `uid` = 9115 [ RunTime:0.002563s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9115 , -0.03 , 3 , 692475.5509 , 692475.5209 , 1537286344) [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9115 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9115 , 0.03 , 7 , 48158.2494 , 48158.2794 , 1537286344) [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9108 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9108 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9119 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9253 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9306 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9350 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9476 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 1113025.4815 , `wallet_num` = 21812.9213  WHERE  `uid` = 9108 [ RunTime:0.002437s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9108 , -0.03 , 3 , 1113025.5115 , 1113025.4815 , 1537286344) [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9108 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9108 , 0.03 , 7 , 21812.8913 , 21812.9213 , 1537286344) [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9101 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9101 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9103 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9104 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9105 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9106 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9107 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9109 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 10130 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 3150202.6603 , `wallet_num` = 6858735.5378  WHERE  `uid` = 9101 [ RunTime:0.002317s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9101 , -0.03 , 3 , 3150202.6903 , 3150202.6603 , 1537286344) [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9101 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9101 , 0.03 , 7 , 6858735.5078 , 6858735.5378 , 1537286344) [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 8596 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 8596 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9102 LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 10088 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 0 , `wallet_num` = 0  WHERE  `uid` = 8596 [ RunTime:0.002290s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (8596 , 0 , 3 , NULL , 0 , 1537286344) [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 8596 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (8596 , 0 , 7 , NULL , 0 , 1537286344) [ RunTime:0.000106s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:05+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/Index/exehange
+[运行时间：0.020794s] [吞吐率：48.09req/s] [内存消耗：3,222.09kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/Index/exehange',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/exehange.html [ array (
+  0 => 'ratio',
+  1 => 'money',
+  2 => 'exchange',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 9 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 21 LIMIT 1 [ RunTime:0.000106s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:15+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/index
+[运行时间：0.032214s] [吞吐率：31.04req/s] [内存消耗：3,324.98kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'x-requested-with' => 'com.uuch.extnetel',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000308s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9915 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9915 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9915  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009729s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:16+08:00 ] 223.104.6.17 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021642s] [吞吐率：46.21req/s] [内存消耗：3,181.66kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=ivk3gh69f6v4097771rdfm84qo',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VTR-AL00 Build/HUAWEIVTR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9915 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.002545s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:54+08:00 ] 112.5.206.160 GET yiwuqianbao.com/
+[运行时间：0.017363s] [吞吐率：57.59req/s] [内存消耗：3,027.69kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; SM-G9550 Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044208 Mobile Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000208s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:54+08:00 ] 112.5.206.160 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.019146s] [吞吐率：52.23req/s] [内存消耗：3,192.59kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=shrkhfvfbsdcqqtq6j2nf32lau',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; SM-G9550 Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044208 Mobile Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000326s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000221s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:56+08:00 ] 112.5.206.160 POST yiwuqianbao.com/mobile/login/dologin
+[运行时间：0.019483s] [吞吐率：51.33req/s] [内存消耗：3,161.73kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=shrkhfvfbsdcqqtq6j2nf32lau',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/login/login',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; SM-G9550 Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044208 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://yiwuqianbao.com',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '32',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18505088777',
+  'pwd' => 'wtz789987',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `mobile` = '18505088777' OR `id` = 18505088777 LIMIT 1 [ RunTime:0.000223s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:58+08:00 ] 112.5.206.160 GET yiwuqianbao.com/mobile/index
+[运行时间：0.035838s] [吞吐率：27.90req/s] [内存消耗：3,324.48kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=shrkhfvfbsdcqqtq6j2nf32lau',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; SM-G9550 Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044208 Mobile Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000308s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9657 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9657 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9657  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009798s ]
+---------------------------------------------------------------
+[ 2018-09-18T23:59:58+08:00 ] 112.5.206.160 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021883s] [吞吐率：45.70req/s] [内存消耗：3,181.51kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'yiwuqianbao.com',
+  'cookie' => 'PHPSESSID=shrkhfvfbsdcqqtq6j2nf32lau',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'https://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; SM-G9550 Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044208 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000349s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9657 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.002591s ]

@@ -1,0 +1,63 @@
+{extend name="base"/}
+{block name="css"}
+	<link rel="stylesheet" href="__ADMIN_/css/user.css" media="all" />
+	<style>
+		.layui-elem-quote{background: rgba(0,0, 0, 0.3);}
+		.layui-table thead tr{background: rgba(0,0, 0, 0.4);}
+		.layui-table{color: #fff;background: rgba(0,0, 0, 0.3);}
+		.layui-table-hover{background: rgba(0,0, 0, 0.4) !important;}
+		.layui-btn{background: #009688;}
+		.layui-form-mid{color: #fff !important;}
+		 body{background: none !important;}
+	</style>
+	{/block}
+{block name="content"}
+	<blockquote class="layui-elem-quote news_search">
+		<div class="layui-inline">
+			<a class="layui-btn layui-btn-normal adminAdd_btn">添加管理员账号</a>
+		</div>
+		<!-- <div class="layui-inline">
+			<a class="layui-btn layui-btn-danger batchDel">批量删除</a>
+		</div> -->
+		<div class="layui-inline">
+			<div class="layui-form-mid layui-word-aux">　添加管理员账号，请妥善保管好您的账号密码</div>
+		</div>
+	</blockquote>
+	<div class="layui-form users_list">
+	  	<table class="layui-table" lay-filter="admins">
+		    <colgroup>
+				<col>
+				<col>
+		    </colgroup>
+		    <thead>
+				<tr>
+					<th>ID</th>
+					<th>登录名</th>
+					<th>角色</th>
+					<th>注册时间</th>
+					<th>操作</th>
+				</tr> 
+		    </thead>
+		    <tbody class="users_content">
+{foreach $admin_list as $v}
+			<tr>
+					<td>{$v.id}</td>
+				<td>{$v.name}</td>
+				<td>{$v.roles.name}</td>
+				<td>{$v.create_time}</td>
+				<td>
+					{if $v.id==1 }<a class="layui-btn layui-btn-success layui-btn-mini admins_edit" data-id="{$v.id}" ><i class="layui-icon"></i> 修改</a>
+					{else /} <a class="layui-btn layui-btn-danger layui-btn-mini admins_del" data-id="{$v.id}" ><i class="layui-icon"></i> 删除</a>
+					<a class="layui-btn layui-btn-success layui-btn-mini admins_edit" data-id="{$v.id}" ><i class="layui-icon"></i> 修改</a>
+					{/if}
+					
+				</td>
+			</tr>
+{/foreach}
+			</tbody>
+		</table>
+	</div>
+	<div id="page"></div>
+{/block}
+
+	{block name="js"}<script type="text/javascript" src="__ADMIN__/js/allUsers.js"></script>{/block}

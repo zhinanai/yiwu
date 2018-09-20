@@ -1,0 +1,32 @@
+{extend name="base"/}
+<body class="childrenBody">
+{block name="content"}
+<form class="layui-form" id="articleForm" enctype="multipart/form-data">
+		<div class="layui-form-item">
+			<label class="layui-form-label">公告标题</label>
+			<div class="layui-input-block">
+				<input type="text" name="title" class="layui-input newsName" lay-verify="required" placeholder="请输入公告标题">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">公告导读</label>
+			<div class="layui-input-block">
+				<input type="text" name="read" class="layui-input newsName" lay-verify="required" placeholder="请输入公告标题">
+			</div>
+		</div>
+
+		<div class="layui-form-item">
+			<label class="layui-form-label">内容</label>
+			<div class="layui-input-block">
+				<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="news_content"></textarea>
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<button class="layui-btn" lay-submit="" lay-filter="addNews">立即提交</button>
+				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		    </div>
+		</div>
+	</form>
+{/block}
+{block name="js"}<script type="text/javascript" src="__ADMIN__/js/newsAdd.js"></script>{/block}

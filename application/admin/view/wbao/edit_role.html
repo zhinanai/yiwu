@@ -1,0 +1,26 @@
+{extend name="base"/}
+
+{block name="content"}
+
+<form class="layui-form" action="#">
+	      
+	<div class="layui-form-item">
+		<label class="layui-form-label"><h1>{$datas.name}</h1></label>
+		<div class="layui-input-block">
+						{foreach $data as $vo} 
+	                     <input name="hoddy[]" title="{$vo.name}" value="{$vo.id}" {in name="$vo.id" value="$nodes"}checked{/in}  ids="{$vo.id}" type="checkbox">
+	                     {/foreach}
+		 
+		</div>
+	  </div>
+			<input type="hidden" name="id" value="{$datas.id}">
+	        <div class="layui-form-item">
+	                <div class="layui-input-block">
+	                 <button class="layui-btn" lay-submit="" lay-filter="editrole">分配节点</button>
+	                </div>
+	        </div>
+	    </form>
+{/block}
+{block name="js"}
+	<script type="text/javascript" src="__ADMIN__/js/roleedit.js"></script>
+{/block}

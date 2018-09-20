@@ -1,0 +1,31 @@
+{extend name="base"/}
+{block name="content"}
+<blockquote class="layui-elem-quote news_search">
+    <!-- <div class="layui-inline">
+        <a class="layui-btn layui-btn-danger batchDel">批量删除</a>
+	</div> -->
+	<div class="layui-inline">
+			<a class="layui-btn layui-btn-danger leveluser_btn" style="background-color:#5FB878">添加等级</a>
+		</div>
+</blockquote>
+<table class="layui-table" lay-data="{width: 892, height:332, url:'/admin/user/userlevel', page:true, id:'idTest'}" lay-filter="demo">
+  <thead>
+    <tr>
+      <th lay-data="{type:'checkbox', fixed: 'left'}"></th>
+      <th lay-data="{field:'id', width:80, sort: true, fixed: true}">ID</th>
+     
+      <th lay-data="{ width:178, align:'center', toolbar: '#barDemo'}"></th>
+    </tr>
+  </thead>
+</table>
+ 
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+  <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+	
+
+{/block}
+	{block name="js"}<script type="text/javascript" src="__ADMIN__/js/userlevel.js"></script>{/block}

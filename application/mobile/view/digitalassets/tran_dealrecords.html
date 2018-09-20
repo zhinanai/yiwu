@@ -1,0 +1,91 @@
+{extend name="base"/}
+{block name="title"}
+    交易记录
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/meCen.css"/>
+<link rel="stylesheet" href="__MOBILE__/css/fanStyle.css"/>
+<link rel="stylesheet" href="__MOBILE__/js/layui/css/layui.css"/>
+
+{/block}
+
+{block name="content"}
+    <div class="header">
+        <div class="header_l">
+         <a href="javascript:history.go(-1);"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+        </div>
+        <div class="header_c"><h2>{:lang('交易记录')}</h2></div>
+        <div class="header_r" ><a href="javascript:void(0)" id="hide" ><img src="__MOBILE__/images/youmore_n1.png" alt=""></a>
+            <div id="p1">
+                <div class="down"></div>
+                <div class="xsh">
+                    <ul class="coin">
+
+                        <li><a href=""></a></li>
+                        <li><a href="">比特币</a></li>
+                        <li><a href="">菜特币</a></li>
+                        <li><a href="">以太坊</a></li>
+                        <li class="off"><a href="">狗狗币</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="reveal-modal-bg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="big_width100">
+        <div class="yugejil"  style="width: 100%;position: absolute;top:46px;" >
+            <p style="width:15%;">{:lang('类型')}</p>
+            <p style="width:12%;">{:lang('对方')}</p>
+            <p style="width:30%;">{:lang('数量')}</p>
+            <p style="width:15%;">{:lang('总价')}</p>
+            <p style="width:25%;">{:lang('时间')}</p>
+            
+        </div>
+        <div id="wrapper" style="width: 100%;position: absolute;top:86px;z-index: inherit;" >
+            <div class="scroller">
+                <ul>
+                    <foreach name="list" item="v">
+                        <?php 
+                        $arrayn=array(1=>"",2=>"比特币",3=>"莱特币",4=>"以太坊",5=>"狗狗币");
+                        ?>
+                        <li>
+                            <p style="width:15%;"><eq name="v['type']" value='2'>123<else />123</eq></p>
+                            <p style="width:15%; 
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;"> 123
+                            </p>
+                            <p style="width:26%;">123</p>
+                            <p style="width:14%;">123</p>
+                            <p style="width:25%;float: right;padding-right:0.3rem;">123</p>
+                        </li>
+                    </foreach>
+                </ul>
+                
+                <!--   <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div> -->
+            </div>
+        </div>
+    </div>
+
+
+{/block}
+{block name="js"}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("#p1").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+                });
+            });
+
+            $('.reveal-modal-bg').click(function () {
+                $("#p1").toggle();
+            })
+
+            $('.coin').click(function () {
+                $("#p1").toggle();
+            })
+         </script>
+{/block}
+

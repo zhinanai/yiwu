@@ -1,0 +1,65 @@
+{extend name="base"/}
+<body class="childrenBody">
+{block name="content"}
+<form class="layui-form" id="goodsForm" enctype="multipart/form-data">
+		<div class="layui-form-item">
+			<label class="layui-form-label">商品名称</label>
+			<div class="layui-input-block">
+				<input type="text" name="goods_name" class="layui-input" lay-verify="required" value="{$goods.goods_name}" placeholder="请输入商品名称">
+				<input type="hidden" name="id" class="layui-input" value="{$goods.id}">
+			</div>
+		</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">商品图片</label>
+		<div class="layui-input-block">
+			<div class="layui-input-inline">
+				<button type="button" class="layui-btn" id="test1">
+					<i class="layui-icon">&#xe67c;</i>上传图片
+				</button>
+			</div>
+			<div class="layui-input-inline">
+				<img id="preview" width="200px" src="{$goods.goods_img}" >
+			</div>
+		</div>
+	</div>
+
+		<div class="layui-form-item">
+				<label class="layui-form-label">商品价格</label>
+				<div class="layui-input-inline">
+					<input type="text" name="price" value="{$goods.price}" class="layui-input"  placeholder="请输入商品价格">
+				</div>
+				<div class="layui-form-mid layui-word-aux">/元</div>
+		</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">是否上架</label>
+		<div class="layui-input-block">
+
+			{if $goods.is_sell == '1'}
+			<input type="radio" name="is_sell" value="1" title="上架" checked="">
+			<input type="radio" name="is_sell" value="0" title="下架" >
+			{else /}
+			<input type="radio" name="is_sell" value="1" title="上架" >
+			<input type="radio" name="is_sell" value="0" title="下架" checked="">
+			{/if}
+
+
+		</div>
+	</div>
+
+		<div class="layui-form-item">
+			<label class="layui-form-label">商品内容</label>
+			<div class="layui-input-block">
+				<textarea class="layui-textarea layui-hide" name="goodsDetail" lay-verify="content" id="goodsDetail">{$goods.goods_detail}</textarea>
+			</div>
+		</div>
+
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<button class="layui-btn" lay-submit="" lay-filter="editGoods">立即提交</button>
+				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		    </div>
+		</div>
+	</form>
+{/block}
+{block name="js"}<script type="text/javascript" src="__ADMIN__/js/goodsAdd.js"></script>{/block}

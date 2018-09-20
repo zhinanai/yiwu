@@ -1,0 +1,178 @@
+{extend name="base"/}
+{block name="title"}
+    商家详情
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__LIB__/layui/css/layui.css" media="all"/>
+<link rel="stylesheet" href="__MOBILE__/css/shop.css">
+{/block}
+{block name="content"}
+<!-- 头部 -->
+<div class="fxm_header">
+    <div class="fxm_left">
+        <a href="javascript:history.go(-1)"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+    </div>
+    <div class="fxm_center">{:lang('商家详情')}</div>
+</div>
+<!-- 轮播图 -->
+<div class="swiper-container myimg" style="height: 3.6rem;">
+    <div class="swiper-wrapper imgboxb">
+        {foreach $business.orga_img as $k=>$v}
+        <div class="swiper-slide">
+            <img src="{$v}" class="w_sjxqtp">
+        </div>
+        {/foreach}
+    </div>
+    <div class="swiper-pagination"></div>
+</div> 
+    <div class="bgchange">
+        <img src="{$v}" class="target">
+    </div>
+<div class="w_details">
+    <div class="w_mingcheng">
+        <h2>{$business.name}</h2>
+        <p class="clearfix" style="margin-bottom: .3rem;">
+            <span><img src="__MOBILE__/images/wujiaoxing.png" alt=""></span>
+            <span><img src="__MOBILE__/images/wujiaoxing.png" alt=""></span>
+            <span><img src="__MOBILE__/images/wujiaoxing.png" alt=""></span>
+            <span><img src="__MOBILE__/images/wujiaoxing.png" alt=""></span>
+            <span><img src="__MOBILE__/images/wujiaoxing.png" alt=""></span>
+            <strong>5.0分</strong>
+        </p>
+    </div>
+</div>
+    <div class="w_time">
+        <i class="iconfont icon-rili"></i>
+        <span>{$business.start_time}--{$business.end_time}</span>
+    </div>
+    <div class="w_address clearfix">
+        <a class="w_addressleft" href="{:url('/mobile/shop/product_detail')}">
+            <i class="iconfont icon-location"></i>
+            <span>{$business.address}</span>
+        </a>
+
+        <a href="tel:{$business.mobile}" class="w_phone">
+            <i class="iconfont icon-dianhua"></i>
+        </a>
+    </div>
+    <div class="w_information">
+        <h1>{:lang('商家信息')}</h1>
+        <div class="w_jieshao">
+            <p>{:lang('商家介绍')}</p><br>
+            <span>{$business.introduce}</span>
+        </div>
+        <div class="w_jieshao">
+            <p>{:lang('购买须知')}</p><br>
+            <span>{$business.notice}</span>
+        </div>
+        <div class="w_jieshao">
+            <p>{:lang('商家二维码')}</p><br>
+            <img class="ewm-block" src="{:url('mobile/User/businessCode',['id'=>$business.userid])}" alt="">
+        </div>
+    </div>
+        <div class="share">
+            <img class="ewm-img" src="{:url('mobile/User/businessCode',['id'=>$business.userid])}" alt="">
+        </div>
+    <div class="w_tuijian">
+            <div class="w_tjdiv">
+                <span class="w_shopline">—&nbsp;&nbsp;{:lang('推荐商家')}&nbsp;&nbsp;—</span>
+            </div>
+            <ul>
+                {foreach $business_tuijian as $k=>$vo}
+                <li>
+                    <a href="{:url('/mobile/shop/product',['id'=>$vo.userid])}">
+                        <img src="{$vo.shop_img}" alt="">
+                        <div class="w_yjright">
+                            <div class="w_kmright">
+                                <h2>{$vo.name}</h2>
+                                <h3>
+                                    <span style="display: none;">820.65km</span>
+                                </h3>
+                            </div>
+                            <div class="w_font">
+                                {$vo.address}
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {/foreach}
+            </ul>
+        </div>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__MOBILE__/js/swiper.min.js"></script>
+<script>
+    // 轮播图
+    var mySwiper = new Swiper(".swiper-container",{
+    direction:"horizontal",
+    loop:true,
+    pagination:".swiper-pagination",
+    autoplay:3000,
+    autoplayDisableOnInteraction : false,
+    });
+// $(function () {
+//     $.get("{:url('/mobile/login/hongbao')}",function(res){
+//         var data = eval('(' + res + ')');
+//         if(data[0].hongbao=='1'){
+//             $('.money-pag').hide();
+//         }else{
+//             $('.money-pag').show();
+//             $('.getnums').html(data[0].money)
+//         }
+//     })
+//     $('#hide').click(function () {
+//         $.get("{:url('/mobile/login/linghongbao')}",function(res){
+//             var data=eval('(' + res + ')');
+//             //console.log(data.type)
+//             if(data.type==1){
+//                 $('.money-pag').hide();
+//                 window.location.reload();
+//             }else{
+//                 $('.money-pag').show();
+//             }
+//         })
+//     })
+// })
+</script>
+
+ <!-- 二维码点击放大事件 -->
+<script>
+		
+    // 1.找到事件源
+    var mask = document.getElementsByClassName('share')[0];
+    // 2.添加事件
+        mask.onclick = function(){
+        // 3. 执行函数
+        this.style.display = 'none';
+    }
+    
+    var wxBlock = document.getElementsByClassName('ewm-block')[0];
+        wxBlock.onclick = function(){
+        mask.style.display = 'block';
+    }
+</script>
+
+
+ <!-- 轮播图点击放大图 -->
+<script>
+		var imgs = $('w_sjxqtp');
+		var targetImg = $('target')[0];
+        var bgchange = document.getElementsByClassName('bgchange')[0];
+		for(var i = 0 ; i < imgs.length; i ++){
+			imgs[i].onclick = function(){
+				var imgUrl = this.src;
+				targetImg.src = imgUrl;
+            bgchange.style.display = 'block';
+			}
+		}
+        
+		function $(cname){
+			return document.getElementsByClassName(cname);
+		}
+
+        bgchange.onclick = function(){
+        this.style.display = 'none';
+        }
+    
+	</script>
+{/block}

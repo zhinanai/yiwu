@@ -1,0 +1,58 @@
+{extend name="base"/}
+{block name="content"}
+<form class="layui-form" id="crowdForm" >
+	<input type="hidden" class="layui-input"  value="{$data.id}" name="id">
+    <div class="layui-form-item">
+        <label class="layui-form-label">众筹名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="name" class="layui-input newsName" value="{$data.name}" lay-verify="required" placeholder="请输入众筹名称">
+        </div>
+    </div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">众筹数量</label>
+		<div class="layui-input-block">
+			<input type="text" name="nums" value="{$data.nums}" class="layui-input newsName" lay-verify="required" placeholder="请输入众筹数量">
+		</div>
+	</div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">限购数量</label>
+        <div class="layui-input-block">
+            <input type="text" name="limit" value="{$data.limit}" class="layui-input newsName" lay-verify="required" placeholder="请输入每人限购数量">
+        </div>
+    </div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">VSpay/余额</label>
+		<div class="layui-input-block">
+			<input type="text" name="price" class="layui-input newsName" value="{$data.price}" lay-verify="required" placeholder="购买一枚VSPAY所需余额数">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">开始时间</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" id="test1" value="{$data.start_time}" name="startTime" lay-verify="required" placeholder="请输入众筹开始时间">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">结束时间</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" id="test2" value="{$data.end_time}" name="endTime" lay-verify="required" placeholder="请输入众筹结束时间">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">订单状态</label>
+		<div class="layui-input-block">
+			<select name="status" lay-verify="required" id="status">
+				{foreach $status as $key => $value}
+				<option value="{$key}" {if condition="$key == $data.status"} selected {/if} >{$value}</option>
+				{/foreach}
+			</select>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit="" lay-filter="crowdEdit">立即提交</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}<script type="text/javascript" src="__ADMIN__/js/crowdEdit.js"></script>{/block}

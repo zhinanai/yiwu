@@ -1,0 +1,57 @@
+{extend name="base"/}
+{block name="title"}
+    分享好友
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/yangStyle.css">
+<style>
+    html{width: 100%;height: 100%;}
+    body{background-image:url(__MOBILE__/images/code_bg.png);background-repeat:no-repeat;background-position: center;background-size: 100% 100%;}
+    .big_width{margin-top: 1.8rem;}
+    .qrCodeGro{width: 100%;margin: .4rem auto 0;}
+    .big_width80{margin-top: 1.3rem;margin-bottom: 1rem;}
+</style>
+{/block}
+{block name="content"}
+    <div class="header">
+	    <div class="header_l" style="width:33.3%;">
+	        <a href="javascript:history.go(-1)"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c" style="width:33.3%;"><h2>{:lang('分享好友')}</h2></div>
+	</div>
+
+       <div class="big_width80">
+	     <div class="qrCodeGro qrCodeGroa">
+	     	<img src="{:url('mobile/User/CreateCode')}">
+	     	<p class="mt40">{:lang('扫描二维码即可分享好友哟')}</p>
+	     </div>
+
+	     <div class="fxfuzanj">
+             <span hidden id="txt">{$url}/{:url('mobile/login/register',['id'=>$id])}</span>
+             <a href="javascript:void(0)"  onclick="copyUrl();" >{:lang('复制下载地址')}</a>
+         </div>
+
+	     <div class="intoButt mt30 mb30">
+	     	<a href="{:url('/mobile/User/Teamdets')}">{:lang('分享记录')}</a>
+	     </div>
+	   </div>
+{/block}
+{block name="js"}
+    <script>
+        function copyUrl()
+        {
+            var txt=$("#txt").text();
+            copy(txt);
+        }
+
+        function copy(message) {
+            var input = document.createElement("input");
+            input.value = message;
+            document.body.appendChild(input);
+            input.select();
+            input.setSelectionRange(0, input.value.length), document.execCommand('Copy');
+            document.body.removeChild(input);
+            msg_alert("{:lang('复制成功了哦')}");
+        }
+    </script>
+{/block}

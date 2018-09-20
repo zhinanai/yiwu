@@ -1,0 +1,95 @@
+{extend name="base"/}
+{block name="css"}
+<style>
+	body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+<!--基础释放比例-->
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">兑换奖励</div>
+<form class="layui-form" >
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 155px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange1" required lay-verify="required" value="{$list1[0]['tip']}" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">伞下代数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_daishu1" required lay-verify="required" value="{$list4[0]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 100px">兑换奖励</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_bili1" required lay-verify="required" value="{$list1[0]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 155px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange2" required lay-verify="required" value="{$list1[1]['tip']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">伞下代数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_daishu2" required lay-verify="required" value="{$list4[1]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 100px">兑换奖励</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_bili2" required lay-verify="required" value="{$list1[1]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 155px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange3" required lay-verify="required" value="{$list1[2]['tip']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">伞下代数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_daishu3" required lay-verify="required" value="{$list4[2]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 100px">兑换奖励</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_bili3" required lay-verify="required" value="{$list1[2]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 155px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange4" required lay-verify="required" value="{$list1[3]['tip']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">伞下代数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_daishu4" required lay-verify="required" value="{$list4[3]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 100px">兑换奖励</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_bili4" required lay-verify="required" value="{$list1[3]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 155px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange5" required lay-verify="required" value="{$list1[4]['tip']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">伞下代数</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_daishu5" required lay-verify="required" value="{$list4[4]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 100px">兑换奖励</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_bili5" required lay-verify="required" value="{$list1[4]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig4">立即提交</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__ADMIN__/js/reward.js"></script>
+{/block}

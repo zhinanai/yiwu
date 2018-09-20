@@ -1,0 +1,63 @@
+{extend name="base"/}
+{block name="title"}
+    123店铺
+{/block}
+{block name="css"}
+<style>
+    .map-wrap {
+        height: 7rem;
+    }
+    #mapPage{
+        width: 100%;
+        height: 13.28rem;
+        margin-top: 1rem;
+    }
+</style>
+<link rel="stylesheet" href="__LIB__/layui/css/layui.css" media="all"/>
+<link rel="stylesheet" href="__MOBILE__/css/shop.css">
+<style>
+    
+</style>
+{/block}
+{block name="content"}
+<!-- 头部 -->
+<div class="fxm_header">
+    <div class="fxm_left">
+        <a href="javascript:history.go(-1)"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+    </div>
+    <div class="fxm_center">{:lang('123店铺')}</div>
+</div>
+<iframe id="mapPage"frameborder=0 src="https://apis.map.qq.com/tools/poimarker?type=1&keyword=酒店&center=39.908491,116.374328&radius=1000&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp">
+</iframe>
+{/block}
+{block name="js"}
+<script>
+    window.addEventListener('message', function (event) {
+        // 接收位置信息，用户选择确认位置点后选点组件会触发该事件，回传用户的位置信息
+        var loc = event.data;
+        if (loc && loc.module == 'locationPicker') {
+            var city = loc.cityname;
+            var lat = loc.latlng.lat;
+            var lng = loc.latlng.lng;
+            var address = loc.poiaddress;
+            //window.location.replace('{:url("/mobile/User/sellers")}');
+            $.ajax({
+                url:'/mobile/shop/product_detail',
+                method:'post',
+                data:{city:city,lat:lat,lng:lng,address:address},
+                dataType:'JSON',
+                success:function(data){
+                    if(data.code='0'){
+                        msg_alert(data.msg,data.url);
+                    }
+                    else
+                    msg_alert(data.msg,data.url);
+                },
+                error:function (data) {
+                }
+            })
+
+        }
+    }, false);
+</script>
+{/block}

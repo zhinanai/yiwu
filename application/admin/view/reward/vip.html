@@ -1,0 +1,48 @@
+{extend name="base"/}
+{block name="css"}
+<style>
+    body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">成为VIP</div>
+<form class="layui-form" >
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 110px">成为VIP积分设置</label>
+		<div class="layui-input-inline">
+			<input  name="limit_vip" required lay-verify="required" value="{$list.value}" placeholder="基础释放比例" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig11">立即提交</button>
+	    </div>
+    </div>
+</form>
+<hr>
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">VIP奖励比例</div>
+<form class="layui-form" >
+    <div class="layui-form-item">
+        <label class="layui-form-label" style="width: 115px">伞下会员余额流通比例</label>
+        <div class="layui-input-inline">
+            <input  name="vip1" required lay-verify="required" value="{$list2[0]['value']}"  autocomplete="off"  class="layui-input">
+        </div>
+        <div class="layui-form-mid layui-word-aux">%</div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label" style="width: 115px">伞下VIP伞下会员余额流通比例</label>
+        <div class="layui-input-inline">
+            <input  name="vip2" required lay-verify="required" value="{$list2[1]['value']}" autocomplete="off"  class="layui-input">
+        </div>
+        <div class="layui-form-mid layui-word-aux">%</div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="editConfig12">立即提交</button>
+        </div>
+    </div>
+</form>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__ADMIN__/js/reward.js"></script>
+{/block}

@@ -1,0 +1,150 @@
+{extend name="base"/}
+{block name="title"}
+    众筹项目记录
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/meCen.css"/>
+<link rel="stylesheet" href="__MOBILE__/css/fanStyle.css"/>
+<link rel="stylesheet" href="__MOBILE__/js/layui/css/layui.css"/>
+<style>
+    .pgoumai {
+        font-size: 14px;
+        color: #ff2929;
+        text-align: center;
+        display: block;
+        border-radius: 22px;
+        line-height: 22px;
+        /* border: 1px solid #ff2929; */
+        width: 10%;
+        margin-right: 1vmin;
+    }
+    .yugejil{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .yugejil p{
+        flex: 1;
+    }
+    .yugejil p.time{
+        flex:2;
+    }
+    .scroller ul li{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #wrapper .scroller ul li p{
+        flex:1;
+    }
+    #wrapper .scroller ul li p.time{
+        flex:2;
+        font-size: .24rem;
+        color:#666;
+    }
+</style>
+{/block}
+
+{block name="content"}
+<div class="header">
+    <div class="header_l">
+        <a href="{:url('/mobile/Transaction/balance_trade')}"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>{:lang('订单记录')}</h2></div>
+    <div class="header_r" ><a href="javascript:void(0)" id="hide" ><img src="__MOBILE__/images/youmore_n1.png" alt=""></a>
+        <div id="p1">
+            <div class="down"></div>
+            <div class="xsh">
+                <ul class="coin">
+                    <li><a href="">易物币</a></li>
+                    <li><a href="">Bitcoin</a></li>
+                    <li><a href="">Ethereum</a></li>
+                    <li><a href="">USDT</a></li>
+                    <li class="off"><a href="">TRX</a></li>
+              </ul>
+            </div>
+            <div class="reveal-modal-bg"></div>
+        </div>
+    </div>
+</div>
+
+<div class="big_width100">
+    <div class="investment_f" >
+        <div class="investment_title">
+            <div  class="{if $status==1}on{/if}"> <a href="{:url('/mobile/Transaction/tran_orderinfos',['status'=>1])}">{:lang('运行中')}</a></div>
+            <div class="{if $status==2}on{/if}"><a href="{:url('/mobile/Transaction/tran_orderinfos',['status'=>2])}">{:lang('已完成')}</a></div>
+        </div>
+    </div>
+<div >
+
+    <div class="yugejil"  style="width: 100%;position: absolute;top:111px;" >
+        <p>{:lang('类型')}</p>
+        <p>{:lang('数量')}</p>
+        <p>{:lang('总价')}</p>
+        <p class="time">{:lang('时间')}</p>
+        <p>{:lang('操作')}</p>
+
+        
+     
+    </div>
+
+    <div id="wrapper" style="width: 100%;position: absolute;top:151px;z-index: inherit;" >
+        <div class="scroller">
+            <ul>
+            
+            <!-- <eq name="step" value='2'>
+                 <foreach name="list" item="v">
+
+                    <?php 
+                    $arrayn=array(1=>"",2=>"比特币",3=>"莱特币",4=>"以太坊",5=>"狗狗币");
+                    ?>
+                        <li>
+                         
+                         <p style="width:15%;"><eq name="v['type']" value='2'>123<else />123</eq></p>
+                            <p style="width:35%;">123</p>
+                            <p style="width:20%;">123</p>
+
+                            <p style="width:30%;">123</p>
+
+                        </li>
+                    </foreach>
+
+            <else /> -->
+            <?php 
+                            $arrayn=array(1=>"",2=>"比特币",3=>"莱特币",4=>"以太坊",5=>"狗狗币");
+                            ?>
+            {if count($list)>0 }
+            {volist name="list" id="vo"}
+            <li>
+                             
+                 <p class="assetid" style="display:none">{$vo.id}</p>           
+                <p >{if $vo.type == 1}{:lang('出售')}
+                    {else /} {:lang('购买')}
+                    {/if}
+                </p>
+                <p >{$vo.num}</p>
+
+                 <p >{$vo.tprice}</p> 
+                <p class="time">{$vo.create_time}</p>
+                 {if $status==1 }
+                    <p  class="pgoumai"><button class="quxiao" >{:lang('取消')}</button></p>
+                {else /}<p >{:lang('已完成')}</p>  
+                  {/if}      
+
+                </li>
+          {/volist} 
+          {/if}
+            </eq>            
+
+            </ul>
+         
+          <!--   <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div> -->
+        </div>
+    </div>
+
+</div>
+</div>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__MOBILE__/js/transaction/tran_orderinfos.js"></script>
+{/block}

@@ -1,0 +1,226 @@
+.tree {
+    color: #333;
+    font-family: Verdana,Arial,Helvetica,AppleGothic,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+}
+.tree li {
+    line-height: 18px;
+    list-style: outside none none;
+    margin: 10px 0;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+.tree li ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+.tree li a {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-decoration: none;
+}
+.tree li a:hover {
+    text-decoration: underline;
+}
+.tree li a.curSelectedNode {
+    background-color: #ffe6b0;
+    border: 1px solid #ffb951;
+    color: black;
+    opacity: 0.8;
+}
+.tree li a.curSelectedNode_Edit {
+    background-color: #ffe6b0;
+    border: 1px solid #ffb951;
+    color: black;
+    line-height: 18px;
+    opacity: 0.8;
+}
+.tree li a.tmpTargetNode {
+    background-color: #316ac5;
+    border: 1px solid #316ac5;
+    color: white;
+    opacity: 0.8;
+}
+.tree li a input.rename {
+    font-size: 12px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+}
+.tree li button {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 18px;
+}
+.tree li button.ico {
+    margin: 0 2px 0 0;
+    padding: 0;
+}
+.tree li button.edit {
+    background: transparent url("../images/edit.png") no-repeat scroll 0 0;
+}
+.tree li button.remove {
+    background: transparent url("../images/remove.png") no-repeat scroll 0 0;
+}
+.tree li button.chk {
+    border: 0 none;
+    cursor: auto;
+    height: 13px;
+    margin: 0 3px 0 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 13px;
+}
+.tree li button.chk.checkbox_false_full {
+    background: transparent url("../images/checkbox.png") no-repeat scroll 0 0;
+}
+.tree li button.chk.checkbox_false_full_focus {
+    background: transparent url("../images/checkbox.png") no-repeat scroll 0 -12px;
+}
+.tree li button.chk.checkbox_false_part {
+    background: transparent url("../images/checkbox.png") no-repeat scroll 0 -72px;
+}
+.tree li button.chk.checkbox_false_part_focus {
+    background: transparent url("../images/checkbox.png") no-repeat scroll 0 -84px;
+}
+.tree li button.chk.checkbox_true_full {
+    background: transparent url("../images/checkbox.png") no-repeat scroll 0 -24px;
+}
+.tree li button.chk.checkbox_true_full_focus {
+    background: transparent url("../images/checkbox.png") no-repeat scroll 0 -36px;
+}
+.tree li button.chk.checkbox_true_part {
+    background: transparent url("../images/checkbox.png") no-repeat scroll 0 -48px;
+}
+.tree li button.chk.checkbox_true_part_focus {
+    background: transparent url("../images/checkbox.png") no-repeat scroll 0 -60px;
+}
+.tree li button.chk.radio_false_full {
+    background: transparent url("../images/radio.png") no-repeat scroll 0 0;
+}
+.tree li button.chk.radio_false_full_focus {
+    background: transparent url("../images/radio.png") no-repeat scroll 0 -12px;
+}
+.tree li button.chk.radio_false_part {
+    background: transparent url("../images/radio.png") no-repeat scroll 0 -72px;
+}
+.tree li button.chk.radio_false_part_focus {
+    background: transparent url("../images/radio.png") no-repeat scroll 0 -84px;
+}
+.tree li button.chk.radio_true_full {
+    background: transparent url("../images/radio.png") no-repeat scroll 0 -24px;
+}
+.tree li button.chk.radio_true_full_focus {
+    background: transparent url("../images/radio.png") no-repeat scroll 0 -36px;
+}
+.tree li button.chk.radio_true_part {
+    background: transparent url("../images/radio.png") no-repeat scroll 0 -48px;
+}
+.tree li button.chk.radio_true_part_focus {
+    background: transparent url("../images/radio.png") no-repeat scroll 0 -60px;
+}
+.tree li button.switch_root_open {
+    background: rgba(0, 0, 0, 0) url("../images/minus_root.gif") repeat scroll 0 0;
+}
+.tree li button.switch_root_close {
+    background: rgba(0, 0, 0, 0) url("../images/plus_root.gif") repeat scroll 0 0;
+}
+.tree li button.switch_roots_open {
+    background: rgba(0, 0, 0, 0) url("../images/minus_top.gif") repeat scroll 0 0;
+}
+.tree li button.switch_roots_close {
+    background: rgba(0, 0, 0, 0) url("../images/plus_top.gif") repeat scroll 0 0;
+}
+.tree li button.switch_center_open {
+    background: rgba(0, 0, 0, 0) url("../images/minus_center.gif") repeat scroll 0 0;
+}
+.tree li button.switch_center_close {
+    background: rgba(0, 0, 0, 0) url("../images/plus_center.gif") repeat scroll 0 0;
+}
+.tree li button.switch_bottom_open {
+    background: rgba(0, 0, 0, 0) url("../images/minus_bottom.gif") repeat scroll 0 0;
+}
+.tree li button.switch_bottom_close {
+    background: rgba(0, 0, 0, 0) url("../images/plus_bottom.gif") repeat scroll 0 0;
+}
+.tree li button.switch_noLine_open {
+    background: rgba(0, 0, 0, 0) url("../images/minus_noLine.gif") repeat scroll 0 0;
+}
+.tree li button.switch_noLine_close {
+    background: rgba(0, 0, 0, 0) url("../images/plus_noLine.gif") repeat scroll 0 0;
+}
+.tree li button.switch_root_docu {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.tree li button.switch_roots_docu {
+    background: rgba(0, 0, 0, 0) url("../images/line_top.gif") repeat scroll 0 0;
+}
+.tree li button.switch_center_docu {
+    background: rgba(0, 0, 0, 0) url("../images/line_center.gif") repeat scroll 0 0;
+}
+.tree li button.switch_bottom_docu {
+    background: rgba(0, 0, 0, 0) url("../images/line_bottom.gif") repeat scroll 0 0;
+}
+.tree li button.switch_noLine_docu {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.tree li button.ico_loading {
+    background: transparent url("../images/loading.gif") no-repeat scroll 1px 1px;
+}
+.tree li button.ico_open {
+    background: rgba(0, 0, 0, 0) url("../images/user_business.png") repeat scroll 0 0;
+}
+.tree li button.ico_close {
+    background: rgba(0, 0, 0, 0) url("../images/user.png") repeat scroll 0 0;
+}
+.tree li button.ico_docu {
+    background: rgba(0, 0, 0, 0) url("../images/user.png") repeat scroll 0 0;
+}
+.tree INPUT.checkbox {
+    height: 18px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 18px;
+}
+.tmpTargetTree {
+    background-color: #ffe6b0;
+    border: 0 solid #ffb951;
+    opacity: 0.8;
+}
+button.tmpzTreeMove_arrow {
+    background: transparent url("../images/moveArrow.png") no-repeat scroll 0 0;
+    border: 0 none;
+    height: 16px;
+    margin: 2px 0 0 1px;
+    padding: 0;
+    position: absolute;
+    width: 16px;
+}
+.zTreeDragUL {
+    background-color: #cfcfcf;
+    border: 1px dotted #00b83f;
+    margin: 0;
+    opacity: 0.8;
+    padding: 0;
+    position: absolute;
+}
+.zTreeMask {
+    background-color: #cfcfcf;
+    opacity: 0;
+    position: absolute;
+    z-index: 10000;
+}

@@ -1,0 +1,54 @@
+{extend name="base"/}
+{block name="css"}
+<style>
+	body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">倍数设置</div>
+<form class="layui-form" >
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 140px">转账倍数设置</label>
+		<div class="layui-input-inline">
+			<input  name="transfor_multiple" required lay-verify="required" value="{$list.value}" placeholder="转账倍数设置" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig5">立即提交</button>
+		</div>
+	</div>
+</form>
+<form class="layui-form" >
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 140px">余额兑换积分倍数设置</label>
+		<div class="layui-input-inline">
+			<input  name="exchange_multiple" required lay-verify="required" value="{$list1.value}" placeholder="转账倍数设置" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig6">立即提交</button>
+		</div>
+	</div>
+</form>
+<hr>
+<div style="height: 20px"></div>
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">余额积分兑换比例</div>
+<form class="layui-form">
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">余额/积分</label>
+		<div class="layui-input-inline">
+			<input  name="yue_jifen" required lay-verify="required" value="{$list3.value}" placeholder="请填写相应比例" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig9">立即提交</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__ADMIN__/js/reward.js"></script>
+{/block}

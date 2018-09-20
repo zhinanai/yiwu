@@ -1,0 +1,57 @@
+{extend name="base"/}
+{block name="title"}
+    分享记录
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/yangStyle.css">
+<style>
+    .zySearch .search-input{background: #fff;color: #000;}
+    .share_ul{box-sizing: content-box;}
+    .header_l{width: 15%;}
+    .header_r{font-size: .24rem;line-height: 1rem;width: 34%;}
+    .header_c{width: 51%;}
+</style>
+{/block}
+{block name="content"}
+    <div class="header">
+        <div class="header_l">
+            <a href="javascript:history.go(-1)"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+        </div>
+        <div class="header_c"><h2>{:lang('分享记录')}</h2></div>
+        <div class="header_r">{:lang('团队总人数')}:{$team}</div>
+    </div>
+
+    <div class="big_width100 por">
+    
+        <form action="{:url('/mobile/User/Teamdets')}" method="post">
+            <div class="zySearch">
+                <input id="searchInput" name="uinfo" class="search-input" value="" type="text" placeholder="{:lang('搜索UID/手机号码')}">
+                <button class="search-btn btn">{:lang('搜索')}</button>
+            </div>
+        </form>
+        {foreach $users as $user}
+        <div class="share_ul">
+            <div class="share_ul_l">
+                <img src="{$user['head_img']}" alt="">
+                <div class="share_p">
+                    <p>{$user.nickname}</p>
+                    <p>UID:{$user.id}</p>
+                    <p>{:lang('电话')}:{$user.mobile}</p>
+
+                </div>
+            </div>
+            {if $user.user_grade==0}<div class="dengjxias">{:lang('普通会员')}
+            </div>
+            {else } <div class="dengjxias" style="background:red;">VIP
+            </div>
+            {/if}
+            
+        </div>
+         {/foreach}
+      
+    </div>
+
+
+{/block}
+{block name="js"}
+{/block}

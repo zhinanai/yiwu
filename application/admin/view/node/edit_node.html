@@ -1,0 +1,38 @@
+{extend name="base"/}
+
+{block name="content"}
+<form id="userform" class="layui-form" style="width:80%;" enctype="multipart/form-data">
+	<div class="layui-form-item">
+		<label class="layui-form-label">节点名称</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input dataIntegral" name="name" value="{$data.name}"   placeholder="请输入">
+			<input type="hidden" name="id" value="{$data.id}">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">控制器</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input dataIntegral" name="controller" value="{$data.controller}"   placeholder="请输入">
+			
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">密码</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input dataIntegral" name="action" value="{$data.action}"   placeholder="请输入6-12">
+			
+		</div>
+	</div>
+	
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit="" lay-filter="editnode">立即提交</button>
+			<!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
+		</div>
+	</div>
+</form>
+	
+{/block}
+{block name="js"}
+	<script type="text/javascript" src="__ADMIN__/js/nodeedit.js"></script>
+{/block}

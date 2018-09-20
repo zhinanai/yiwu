@@ -1,0 +1,150 @@
+{extend name="base"/} {block name="title"} 未完成订单 {/block} {block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/yangStyle.css">
+<style>
+    .pgoumai {
+        font-size: 14px;
+        color: #ff2929;
+        display: block;
+        border-radius: 5px;
+        border: 1px solid #ff2929;
+        padding: 0 0.5vmin;
+        text-align: center;
+        width: 25%;
+        line-height: .54rem
+    }
+
+    .pgoumai1 {
+        font-size: 14px;
+        color: #aaa;
+        display: block;
+        border-radius: 5px;
+        padding: 0 0.5vmin;
+        text-align: center;
+        width: 25%;
+        line-height: .54rem
+    }
+
+    .demo {
+        margin: -.92rem auto 1rem;
+    }
+    .accordion-handle{
+        margin-bottom: 0;
+    }
+    .qxdd{
+        width: 100%;
+        padding-left:.15rem;
+        height:.75rem;
+        background-color: white;
+    }
+    .pagination{
+        color:#666;
+        padding-left:.15rem;
+        margin-top:.225rem;
+    }
+</style>
+{/block} {block name="content"}
+<div class="header">
+    <div class="header_l">
+        <a href="{:url('/mobile/Growth/buycenter')}">
+            <img src="__MOBILE__/images/jiant.png" alt="">
+        </a>
+    </div>
+    <div class="header_c">
+        <h2>{:lang('未完成订单')}</h2>
+    </div>
+    <div class="header_r"></div>
+</div>
+
+<div class="big_width100">
+    <div class="undone_order">
+        <div class="undone_order_titel clear_wl">
+            <a href="{:url('/mobile/Growth/nofinsh')}" {eq name="status" value="1"}class="undone_OT_l fl "{else /}class="undone_OT_l fl noe"{/eq} > 
+                {:lang('未选择收款人')}</a>
+            <a href="{:url('/mobile/Growth/nofinsh/status/1')}" {eq name="status" value="1"}class="undone_OT_l fr noe"{else /}class="undone_OT_l fr "{/eq}>
+                {:lang('已选择收款人')}</a>
+        </div>
+    </div>
+</div>
+
+<!--<div class="demo">
+        <div class="accordion">
+            <div class="big_width100">
+                <div class="annalWa"><p >没找到相关记录</p></div>
+            </div>
+        </div>
+    </div>-->
+
+<div class="demo">
+     {empty name="list" }
+         <div class="accordion">
+            <div class="big_width100">
+                <div class="annalWa"><p >{:lang('没找到相关记录')}</p></div>
+            </div>
+        </div>
+    {else}
+
+    <div class="accordion">
+       
+            {foreach name="list" item="v"}
+            <div class="accordion-handle">
+                <h4>
+                    <p class="accmrp">{:lang('买入金额')}：{$v.money}RMB
+                       <span>{$v.sell_id?lang('已选择收款人'):lang('未选择收款人')}</span> 
+                    </p>
+                    <p>{$v.create_time}
+                        <span>{$v.sell_id?$v.users.nickname:''}</span>
+                    </p>
+                </h4>
+                <i></i>
+            </div>
+      
+        <div class="qxdd">
+            <h4>
+                <p>
+                {if $v.status < 2}
+                    <a id="quxiao" class="pgoumai" onclick="quxiao({$v:id})" href="###">{:lang('取消订单')}</a>
+                {/if}
+                </p>
+            </h4>
+        </div>
+        <div class="accordion-content por" style="margin-top:1vmin;">
+            <div class="acco_con_up">
+                <p><strong>{:lang('收款人姓名')}：</strong>
+                    <span>{$v.sell_id?$v.name:''}</span>
+                </p>
+                <p>{:lang('手机号码')}：
+                    <span>{$v.sell_id?$v.users.mobile:''}</span>
+                </p>
+                <p>{:lang('开户银行')}：
+                    <span>{$v.sell_id?$v.bandcard_name:''}</span>
+                </p>
+                <p>{:lang('银行卡号')}：
+                    <span style="display: inline;float: none;word-break: break-all;">{$v.sell_id?$v.bandcard_cardnumber:''}</span>
+                </p>
+                <p>{:lang('开户支行')}：
+                    <span>{$v.sell_id?$v.bandcard.account_opening_branch:''}</span>
+                </p>
+                <p>{:lang('交易金额')}：
+                    <span>{$v.sell_id?$v.money:''}</span>
+                </p>
+                <p>{:lang('状态')}：
+                    <span>{$v.sell_id?lang('已选择收款人'):lang('未选择收款人')}</span>
+                </p>
+            </div>
+        </div>
+        {/foreach}
+        <ul class="pagination" style="color:#666;padding-left:2vmin;margin-top:3vmin">
+                <div>
+                        <span class="rows"></span>
+                    </div>
+            <div>
+                <span class="rows"></span>
+            </div>
+        </ul>
+    </div>
+    {/empty}
+</div>
+{/block} {block name="js"}
+<script type="text/javascript" src="__MOBILE__/js/responsive.tabs.js"></script>
+<script type="text/javascript" src="__MOBILE__/js/growth/nofinsh.js"></script>
+  {/block}

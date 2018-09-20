@@ -1,0 +1,86 @@
+{extend name="base"/}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/wenStyle.css"/>
+<style>
+        html,body{
+                background:#dddddd;
+        }
+        .bu_adress{
+                margin-top:1.1rem;
+        }
+        .bu_adress .bu_area{
+                width:100%;
+                height: 1rem;
+                background:#fff;
+                border-top: .04rem solid #f5f5f5;
+                font-size: .3rem;
+                line-height: 1rem;
+                padding-left: .4rem;
+        }
+        .bu_addressicon{
+                float:right;
+                width:5%;
+                margin-top: -0.7rem;
+                margin-right: .4rem;
+        }
+</style>
+{/block}
+{block name="content"}
+
+<div class="login-container register-container">
+        <div class="header">
+                <div class="header_l">
+                <a href="javascript:history.go(-1)"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+                </div>
+                <div class="header_c"><h2>{:lang('国家和地区')}</h2></div>
+        </div>
+       <div class="bu_adress">
+             {foreach $area as $v}
+                <a class="bu_btn">
+                        <div class="bu_area">{:lang($v.areaname)}</div>
+                        <input type="hidden" class="areas" value="{$v.id}">
+                        <input type="hidden" class="page" value="{$page}">
+                </a>
+             {/foreach}
+              
+       </div>
+       
+</div>
+{/block}
+{block name="js"}
+  <script>
+
+        var imgArr = '<img class="bu_addressicon" src="__MOBILE__/images/getaddressicon.png" alt="">';
+	$('.bu_adress>a').click(function(){
+         $(this).append(imgArr);
+	})
+
+
+         $(".bu_btn").click(function(){
+                var Oindex=$(this).index();
+                var Oimg='__MOBILE__/images/getaddressicon.png';
+                $('.bu_btn img').removeAttr("src"); 
+                $('.bu_btn').eq(Oindex).children("img").attr("src",Oimg);
+
+                var area=$(this).children('.areas').val();
+                var page=$(this).children('.page').val();
+                $.post("{:url('/mobile/login/doarea')}",{area:area,page:page},function(data){
+                    console.log(data);
+                    if(data.code==1){
+                        // window.location.href=data.url;
+                        if(data.msg == 'register'){
+                           location.href="{:url('mobile/Login/register')}";
+                        }else if(data.msg == 'getPsw'){
+                           location.href="{:url('mobile/Login/getPsw')}";
+                        }else if(data.msg == 'getPswpay'){
+                           location.href="{:url('mobile/Login/getPswpay')}";
+                        }
+                        
+                    }else{
+                        msg_alert(data.msg);
+                    }   
+                })
+                return Oindex;
+         });
+  </script>
+{/block}

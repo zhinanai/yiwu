@@ -1,0 +1,41 @@
+{extend name="base"/}
+{block name="css"}
+	<style type="text/css">
+		.layui-form-item .layui-inline{ width:33.333%; float:left; margin-right:0; }
+		@media(max-width:1240px){
+			.layui-form-item .layui-inline{ width:100%; float:none; }
+		}
+	</style>
+{/block}
+{block name="content"}
+	<form class="layui-form" style="width:80%;" method="post" action="">
+			<div class="layui-form-item">
+					<label class="layui-form-label">节点名称</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input userName" lay-verify="required" name="name"  value="" autocomplete="off" placeholder="请输入节点名称">
+					</div>
+				</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">控制器</label>
+			<div class="layui-input-block">
+				<input type="text" class="layui-input userName" lay-verify="required" name="controller"  value="" autocomplete="off" placeholder="请输入控制器controller">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">方法</label>
+			<div class="layui-input-block">
+				<input type="text" name="action" lay-verify="pass" class="layui-input" autocomplete="off" placeholder="请输入方法action">
+			</div>
+		</div>
+		{:token()}
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<button class="layui-btn" lay-submit lay-filter="addnode">立即提交</button>
+				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		    </div>
+		</div>
+	</form>
+{/block}
+{block name="js"}
+	<script type="text/javascript" src="__ADMIN__/js/addnode.js"></script>
+{/block}

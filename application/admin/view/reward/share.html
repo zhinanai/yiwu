@@ -1,0 +1,78 @@
+{extend name="base"/}
+{block name="css"}
+<style>
+	body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+<form class="layui-form" >
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 60px">积分达到</label>
+		<div class="layui-input-inline">
+			<input  name="share_jifen1" required lay-verify="required" value="{$list[0]['tip']}" placeholder="所需积分" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 115px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="share_renshu1" required lay-verify="required" value="{$list2[0]['value']}" placeholder="推荐有效用户" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">直推奖励加速</label>
+		<div class="layui-input-inline">
+			<input  name="share_bili1" required lay-verify="required" value="{$list[0]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 60px">积分达到</label>
+		<div class="layui-input-inline">
+			<input  name="share_jifen2" required lay-verify="required" value="{$list[1]['tip']}" placeholder="所需积分" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 115px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="share_renshu2" required lay-verify="required" value="{$list2[1]['value']}" placeholder="推荐有效用户" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">直推奖励加速</label>
+		<div class="layui-input-inline">
+			<input  name="share_bili2" required lay-verify="required" value="{$list[1]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 60px">积分达到</label>
+		<div class="layui-input-inline">
+			<input  name="share_jifen3" required lay-verify="required" value="{$list[2]['tip']}" placeholder="所需积分" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 115px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="share_renshu3" required lay-verify="required" value="{$list2[2]['value']}" placeholder="推荐有效用户" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">直推奖励加速</label>
+		<div class="layui-input-inline">
+			<input  name="share_bili3" required lay-verify="required" value="{$list[2]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 60px">积分达到</label>
+		<div class="layui-input-inline">
+			<input  name="share_jifen4" required lay-verify="required" value="{$list[3]['tip']}" placeholder="所需积分" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 115px">推荐有效用户人数</label>
+		<div class="layui-input-inline">
+			<input  name="share_renshu4" required lay-verify="required" value="{$list2[3]['value']}" placeholder="推荐有效用户" autocomplete="off"  class="layui-input">
+		</div>
+		<label class="layui-form-label" style="width: 85px">直推奖励加速</label>
+		<div class="layui-input-inline">
+			<input  name="share_bili4" required lay-verify="required" value="{$list[3]['value']}"  autocomplete="off"  class="layui-input">
+		</div>
+		<div class="layui-form-mid layui-word-aux">%</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig2">立即提交</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__ADMIN__/js/reward.js"></script>
+{/block}

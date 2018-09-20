@@ -1,0 +1,64 @@
+{extend name="base"/}
+{block name="css"}
+<style>
+	body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">注册送积分</div>
+<!--VIP奖励设置-->
+<form class="layui-form">
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">注册赠送积分数</label>
+		<div class="layui-input-inline">
+			<input  name="registe_jifen" required lay-verify="required" value="{$list.value}" placeholder="赠送积分数" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig7">立即提交</button>
+		</div>
+	</div>
+</form>
+<hr>
+<div style="height: 20px"></div>
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">推荐奖励设置</div>
+<form class="layui-form">
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">推荐一个人赠送积分数</label>
+		<div class="layui-input-inline">
+			<input  name="recommend_jifen" required lay-verify="required" value="{$list2.value}" placeholder="赠送积分数" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">赠送积分最大推荐人数</label>
+		<div class="layui-input-inline">
+			<input  name="recommend_people" required lay-verify="required" value="{$list2.tip}" placeholder="赠送积分最大推荐人数" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig8">立即提交</button>
+		</div>
+	</div>
+</form>
+<hr>
+<div style="height: 20px"></div>
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">有效用户积分设置</div>
+<form class="layui-form">
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">积分设置</label>
+		<div class="layui-input-inline">
+			<input  name="limit_jifen" required lay-verify="required" value="{$list4.value}" placeholder="请填写相应积分" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig10">立即提交</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__ADMIN__/js/reward.js"></script>
+{/block}

@@ -1,0 +1,49 @@
+{extend name="base"/}
+<body class="childrenBody">
+{block name="content"}
+<form class="layui-form" id="crowdForm" enctype="multipart/form-data">
+	<div class="layui-form-item">
+		<label class="layui-form-label">众筹名称</label>
+		<div class="layui-input-block">
+			<input type="text" name="name" class="layui-input newsName" lay-verify="required" placeholder="请输入众筹名称">
+		</div>
+	</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">众筹数量</label>
+			<div class="layui-input-block">
+				<input type="text" name="nums" class="layui-input newsName" lay-verify="required" placeholder="请输入众筹数量">
+			</div>
+		</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">限购数量</label>
+		<div class="layui-input-block">
+			<input type="text" name="limit" class="layui-input newsName" lay-verify="required" placeholder="请输入每人限购数量">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">VSpay/余额</label>
+		<div class="layui-input-block">
+			<input type="text" name="price" class="layui-input newsName" lay-verify="required" placeholder="购买一枚VSPAY所需余额数">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">开始时间</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" id="test1" name="startTime" lay-verify="required" placeholder="请输入众筹开始时间">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">结束时间</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" id="test2" name="endTime" lay-verify="required" placeholder="请输入众筹结束时间">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit="" lay-filter="crowdAdd">立即提交</button>
+			<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}<script type="text/javascript" src="__ADMIN__/js/crowdAdd.js"></script>{/block}

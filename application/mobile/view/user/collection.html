@@ -1,0 +1,45 @@
+{extend name="base"/}
+{block name="title"}
+    转入记录
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/yangStyle.css">
+<style>
+    body{ background: #f5f5f5;margin-top: .92rem;}
+    .annal_ul .annal_ul_l .annal_p{margin-left: 0.2rem;}
+</style>
+{/block}
+{block name="content"}
+    <div class="header">
+	    <div class="header_l">
+            <a href="{:url('/mobile/User/moneycode')}"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>{:lang('收款清单')}</h2></div>
+	    <div class="header_r"></div>
+	</div>
+
+    <div class="big_width100">
+        {foreach $list as $key=>$vo}
+        <div class="annal_ul">
+            <div class="annal_ul_l">
+                <img src="__MOBILE__/images/userhead_img.png" alt="">
+                <div class="annal_p">
+                    <p>{$vo.pay_name}</p>
+                    <p>UID:{$vo.pay_id}</p>
+                </div>
+            </div>
+            <div class="annal_ul_r">
+                <div class="annal_p">
+                    <p class="zhuanrua">{$vo.money}</p>
+                    <p>{$vo.create_time}</p>
+                </div>
+            </div>
+        </div>
+        {/foreach}
+        {if condition="$count eq 0"}
+            <span style="width:100%;text-align: center;padding: .2rem 0;display: block">暂无数据</span>
+        {/if}
+    </div>
+{/block}
+{block name="js"}
+{/block}

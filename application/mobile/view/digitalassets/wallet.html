@@ -1,0 +1,94 @@
+{extend name="base"/}
+{block name="title"}
+{:lang("易宝数字中心")}
+{/block}
+{block name="css"}
+    <link rel="stylesheet" href="__MOBILE__/css/meCen.css"/>
+    <link rel="stylesheet" href="__MOBILE__/css/fanStyle.css"/>
+
+{/block}
+{block name="content"}
+	<div class="header">
+	    <div class="header_l">
+      <a href="{:url('/mobile/Digitalassets/index')}"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+      
+	    </div>
+	    <div class="header_c"><h2>{:lang("易宝数字中心")}</h2></div>
+	    <div class="header_r"></div>
+	</div>
+
+       <div class="big_width100">
+	     <div class="Wbaozx">
+         <p>{:lang("昨日收益（余额）")}{if $assets_grade.assets_grade==0}<img src="__MOBILE__/images/denbgji_00.png"></p>
+                          {elseif $assets_grade.assets_grade==1 /}<img src="__MOBILE__/images/denbgji_01.png"></p>
+                          {elseif $assets_grade.assets_grade==2 /}<img src="__MOBILE__/images/denbgji_02.png"></p>
+                          {else /}<img src="__MOBILE__/images/denbgji_03.png"></p>
+                          {/if}
+                        
+
+         <h3>{$lastsy?$lastsy:'0.0000'}</h3>
+         <div class="Wbaozx_bott">
+          <div><p>{:lang("易宝总资产")}</p><span>{$totalassets}</span></div>
+          <div><a href="{:url('/mobile/Digitalassets/wallet_lock')}"><p class="kyzc">{:lang("可用资产")}</p><span>{$available.available_assets}</span></a></div>
+          
+        </div>
+	     </div>
+	   
+       
+	       <div class="wtreas_order_titel clear_wl">
+			   <a href="{:url('/mobile/Digitalassets/wallet')}"   class="wundone_OT_l fl {if $step==1}noe{/if}" >
+              {:lang("收益记录")}
+       			</a>
+       			<a href="{:url('/mobile/Digitalassets/wallet',array('step'=>2))}" class="wundone_OT_l fl {if $step==2}noe{/if}">
+               {:lang("转出记录")}
+       			</a>
+       			<a href="{:url('/mobile/Digitalassets/wallet',array('step'=>3))}"   class="wundone_OT_l fl {if $step==3}noe{/if}">
+               {:lang("转入记录")}
+       			</a>
+
+       	  </div>
+       
+
+      <div class="zwshj">
+           <div class="yugejil" >                           
+
+              <p style="width:30%;font-size: 0.28rem;">{:lang("来源")}</p>
+              <p style="width:40%;font-size: 0.28rem;">{if $step==1}{:lang("数量(余额)")}{else}{:lang("数量(资产)")}{/if}</p>
+              <p style="width:30%;font-size: 0.28rem;">{:lang('时间')}</p>
+                      
+         </div>
+
+
+             <div id="wrapper1"  >
+                  <div class="scroller">
+                      <ul>
+                        {volist name="list" id="vo"}
+                                  <li>
+                                                        
+                                    <p style="width:36%;">{$vo.type}</p>
+                                    <p style="width:20%;">{if $step==1}{$vo.money}{else}{$vo.num}{/if}</p>
+                                    <p style="width:44%;">{$vo.create_time}</p>
+                                  </li>
+                        {/volist}  
+                      </ul>
+                   
+                    <!--   <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div> -->
+                  </div>
+              </div>
+               <!-- <span style='color:#666;line-height:400%;'>123</span> -->
+         </div>
+	   </div>
+
+
+
+	    <div class="wtjiaoycaozd">
+		    <div class="wtjiaoycaoz clear_wl">
+	       			<a href="{:url('/mobile/Digitalassets/wallet_in')}" class=" fl cznoe" id="cuanjdd1">{:lang("转入")}</a>
+	       			<a href="{:url('/mobile/Digitalassets/wallet_out')}" class=" fl " id="cuanjdd2">{:lang("转出")}</a>
+	       			
+	       	  </div>
+       	</div>
+{/block}
+{block name="js"}
+{/block}
+

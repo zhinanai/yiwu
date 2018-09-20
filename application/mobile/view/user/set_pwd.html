@@ -1,0 +1,80 @@
+{extend name="base"/}
+{block name="title"}密码修改{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/wenStyle.css"/>
+<style>
+    .add_bank_add_gr{border-bottom: none;}
+    .mababno{border-bottom: 1px solid #ddd;}
+</style>
+{/block}
+{block name="content"}
+<div class="header">
+    <div class="header_l">
+        <a href="javascript:history.go(-1)"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c">
+        <h2>{:lang('密码修改')}</h2>
+    </div>
+    <div class="header_r"></div>
+</div>
+<div class="big_width100">
+    <div class="add_bank_add_gr">
+        <div class="fill_sty add_gr_b10 flex">
+            <p>{:lang('旧密码')}</p>
+            <input type="password" name="password" class="password" placeholder="{:lang('输入旧密码')}"   />
+        </div>
+        <div class="fill_sty add_gr_b10 mababno flex">
+            <p>{:lang('新密码')}</p>
+            <input type="password" name="password" class="passwordrepat" placeholder="{:lang('输入新密码')}"   />
+            <input type="hidden" value="{$pwdtype}" class="pwdtype">
+        </div>
+    </div>
+    <div class="wangjmim_se">    
+        <eq name="type" value="1">
+            <a href="{:url('/mobile/Login/getpsw')}">{:lang('忘记登录密码')}？</a>
+            <else />
+            <a href="{:url('/mobile/Login/getpswpay ')}">{:lang('忘记支付密码')}？</a>
+        </eq>
+    </div>
+    <div class="buttonGeoup">
+        <a href="javascript:void(0)" class="not_next ljzf_but ">{:lang('确定')}</a>
+    </div>
+ </div>
+{/block}
+{block name="js"}
+<script>
+$('.ljzf_but').click(function () {
+    var pwd = $('.password').val();
+    var pwdrpt = $('.passwordrepat').val();
+    var pwdtype = $('.pwdtype').val();
+    if(pwd == ''){
+        msg_alert('{:lang("旧密码不能为空哦")}~');
+    }
+    if(pwdrpt == ''){
+        msg_alert('{:lang("新密码不能为空哦")}');
+        return;
+    }
+    if(pwdtype == 2){
+        //交易密码必须为6位纯数字
+        var reg = /^\d{6}\b/;
+        if(!reg.test(pwdrpt)){
+            msg_alert('{:lang("交易密码只能为6位数")}');
+            return false;
+        }
+    }
+    $.ajax({
+        url:'/mobile/User/Setpwd',
+        type:'post',
+        data:{'pwd':pwd,'pwdrpt':pwdrpt,'pwdtype':pwdtype},
+        datatype:'json',
+        success:function (mes) {
+            if(mes.status == 1){
+                msg_alert(mes.message,mes.url);
+            }else{
+                msg_alert(mes.message);
+            }
+        }
+    })
+})
+</script>
+{/block}

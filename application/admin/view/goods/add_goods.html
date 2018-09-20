@@ -1,0 +1,64 @@
+{extend name="base"/}
+{block name="css"}
+	<style type="text/css">
+		.layui-form-item .layui-inline{ width:33.333%; float:left; margin-right:0; }
+		@media(max-width:1240px){
+			.layui-form-item .layui-inline{ width:100%; float:none; }
+		}
+	</style>
+{/block}
+{block name="content"}
+<form class="layui-form" id="goodsForm" enctype="multipart/form-data">
+	<div class="layui-form-item">
+		<label class="layui-form-label">商品名称</label>
+		<div class="layui-input-block">
+			<input type="text" name="goods_name" class="layui-input" lay-verify="required" placeholder="请输入商品名称">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">商品图片</label>
+		<div class="layui-input-block">
+			<div class="layui-input-inline">
+				<button type="button" class="layui-btn" id="goodsPic">
+					<i class="layui-icon">&#xe67c;</i>上传图片
+				</button>
+
+			</div>
+			<div class="layui-input-block">
+				<img id="preview" width="200px" src="" >
+			</div>
+
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+			<label class="layui-form-label">商品价格</label>
+			<div class="layui-input-inline">
+				<input type="text" name="price" value="" class="layui-input" placeholder="请输入商品价格">
+			</div>
+			<div class="layui-form-mid layui-word-aux">/元</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">是否上架</label>
+		<div class="layui-input-block">
+			<input type="radio" name="is_sell" value="1" title="上架" checked="">
+			<input type="radio" name="is_sell" value="0" title="下架" >
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">商品详情</label>
+		<div class="layui-input-block">
+			<textarea class="layui-textarea layui-hide" name="goods_detail" lay-verify="content" id="goodsDetail"></textarea>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit="" lay-filter="addGoods">立即提交</button>
+			<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}
+	<script type="text/javascript" src="__ADMIN__/js/goodsAdd.js"></script>
+{/block}

@@ -1,0 +1,69 @@
+{extend name="base"/}
+{block name="css"}
+<style>
+    .layui-form-label{color: #fff;}
+    .layui-form-radio div{color: #fff;}
+    .layui-input {background: rgba(0, 0, 0, 0.3);color: #fff;border: 1px solid rgba(0, 0, 0, 0.4);}
+    body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+
+   <form class="layui-form" id="formId" action="{url:(admin/Index/close)}" method="post" onsubmit="return sub();">
+        <div class="layui-form-item">
+             <label class="layui-form-label">关闭网站:</label>
+             <div class="layui-input-block">
+                <input type="radio" {if $con['close_net'] == 1} checked="checked" {/if} name="close_net" value="1" title="关闭">
+                <input type="radio" {if $con['close_net'] == 0} checked="checked" {/if} name="close_net" value="0" title="打开">
+             </div>
+        </div>
+        <div class="layui-form-item">
+             <label class="layui-form-label">提示信息:</label>
+             <div class="layui-input-block">
+                <input type="text" name="close_net_content" required  lay-verify="required" value="{$con['close_net_content']}" class="layui-input">
+             </div>
+        </div>
+        <div class="layui-form-item">
+             <label class="layui-form-label">关闭注册:</label>
+             <div class="layui-input-block">
+                <input type="radio" {if $con['close_reg'] == 1} checked="checked" {/if} name="close_reg" value="1" title="关闭">
+                <input type="radio" {if $con['close_reg'] == 0} checked="checked" {/if} name="close_reg" value="0" title="打开">
+             </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">提示信息:</label>
+            <div class="layui-input-block">
+                <input type="text" name="close_reg_content" required  lay-verify="required" value="{$con['close_reg_content']}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+             <div class="layui-input-block">
+                <button class="layui-btn" type="button" onclick="sub()">立即提交</button>
+             </div>
+        </div>
+   </form>
+
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__MOBILE__/js/index.js"></script>
+<script>
+layui.use('form', function(){
+
+});
+</script>
+<script>
+     function sub() {  
+        $.ajax({  
+                cache: true,  
+                type: "POST",  
+                url:"{url:(admin/Index/close)}",  
+                data:$('#formId').serialize(),
+                async: false,  
+                success: function(data) {  
+                    msg_alert("提交成功!");  
+                }  
+            });  
+    }  
+
+</script>
+{/block}

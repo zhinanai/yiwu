@@ -1,0 +1,148 @@
+{extend name="base"/} {block name="title"} {:lang('提交打款')} {/block} {block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/yangStyle.css">
+<style>
+    .pagination div span {
+        padding: 0 0.3rem;
+    }
+</style>
+{/block} {block name="content"}
+<div class="header">
+    <div class="header_l">
+        <a href="{:url('/mobile/Growth/buycenter')}">
+            <img src="__MOBILE__/images/jiant.png" alt="">
+        </a>
+    </div>
+    <div class="header_c">
+        <h2>{:lang('提交打款')}</h2>
+    </div>
+    <div class="header_r"></div>
+</div>
+<div class="demo">
+    <div class="accordion">
+        {empty name="list" }
+
+        <ul class="pagination">
+            <div style="margin-top:1.2rem;text-align: center;color: #999">
+                <span class="rows">{:lang('没有相关内容')}</span>
+            </div>
+        </ul>
+
+        {else} {foreach name="list" id="v"}
+        <div class="changeclass">
+            <div class="accordion-handle">
+                <h4>
+                    <p class="accmrp">{:lang('买入金额')}：{$v.money}RMB
+                        <span class="acco_con_spana"> {empty name="$v.pic"}{:lang('确认收款')}{else}{:lang('等待收款')}{/empty}</span>
+                    </p>
+                    <p>{$v.create_time} 
+                        <span>{:lang('收款人')}：{$v.name}</span>
+                    </p>
+                </h4>
+                <i></i>
+            </div>
+            <div class="accordion-content por">
+                <div class="acco_con_up">
+                    <p>{:lang('收款人姓名')}：
+                        <span> {$v.name}</span>
+                    </p>
+                    <p>{:lang('手机号码')}：
+                        <span>{$v.users.mobile}</span>
+                    </p>
+                    <p>{:lang('开户银行')}：
+                        <span>{$v.bandcard_name}</span>
+                    </p>
+                    <p>{:lang('银行卡号')}：
+                        <span>{$v.bandcard_cardnumber}</span>
+                    </p>
+                    <p>{:lang('开户支行')}：
+                        <span>{$v.bandcard.account_opening_branch}</span>
+                    </p>
+                    <p>{:lang('交易金额')}：
+                        <span>{$v.tomoney}RMB</span>
+                    </p>
+                    <p>{:lang('状态')}：
+                        <span class="acco_con_spana">{empty name="$v.pic"}{:lang('确认收款')}{else}{:lang('等待收款')}{/empty}</span>
+                    </p>
+                </div>
+                <div class="acco_con_upa">
+                    <h3>{:lang("上传打款截图")}</h3>
+                    {empty name="$v.pic"}
+                    <div class="shangcjt">
+                        <form id='myupload{$v.id}' action="" method='post' enctype='multipart/form-data'>
+                            <div class="containera"></div>
+                            <input type="text" value="{$v.id}" name="id" class="chid">
+                             <input type="file" id="photo" name="pic" class="shangcanj">
+                        </form>
+                    </div>
+                    {else}
+                    <img src="{$v.pic}" width="100" class="shangcanj"> {/empty}
+                </div>
+
+                <a onclick="form({$v.id})" class="{$v.pic?'paid':'lanseanna'}">{:lang("提交")}</a>
+            </div>
+            {/foreach} {/empty}
+
+        </div>
+    </div>
+
+    {/block} 
+    {block name="js"} <script type="text/javascript" src="__MOBILE__/js/responsive.tabs.js"></script>
+   
+    <script>
+            $(document).ready(function () {
+                $('.accordion,.changeclass').respTabs({
+                    model: 'accordions'
+                });
+            });
+    
+            $('.shangcanj').change(function (e) {
+                var old_this = $(this);
+               var pform= old_this .parent();
+              console.log(pform);
+                var files = this.files;
+                var img = new Image();
+                var reader = new FileReader();
+                reader.readAsDataURL(files[0]);
+                reader.onload = function (e) {
+                    var dx = (e.total / 1024) / 1024;
+                    if (dx >= 2) {
+                        alert("{:lang('文件不能大于2M')}");
+                        return;
+                    }
+                    img.src = this.result;
+                    img.style.width = "100%";
+                    img.style.height = "90%";
+                   pform.find('.containera').html(img);
+                }
+            })
+    
+        function form(id) {
+                var old = $(this);
+                var fid="myupload"+id;
+                var formData = new FormData(document.getElementById(fid));
+                $.ajax({
+                    url: '',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    // dataType: 'json',
+                    success: function (data) {
+                        if (data.status == 1) {
+                            msg_alert(data.msg);
+                            old.parents('.changeclass').find('.acco_con_spana').text('{:lang("等待收款")}');
+                            old.text('{:lang("已打款")}');
+                            old.addClass('paid').removeClass('lanseanna');
+                        } else {
+                            msg_alert(data.msg);
+                        }
+                    },
+                    error: function (xhr) { //上传失败
+                        msg_alert('{:lang("上传失败")}');
+                    }
+                   
+                })
+    
+            }
+        </script>
+    {/block}

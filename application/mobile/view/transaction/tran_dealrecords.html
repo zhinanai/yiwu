@@ -1,0 +1,114 @@
+{extend name="base"/}
+{block name="title"}
+    交易记录
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/meCen.css"/>
+<link rel="stylesheet" href="__MOBILE__/css/fanStyle.css"/>
+<link rel="stylesheet" href="__MOBILE__/js/layui/css/layui.css"/>
+<style>
+    .yugejil{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    /* .yugejil p{
+        flex: 1;
+    } */
+    .yugejil p.time{
+        flex:2;
+    }
+    .scroller ul li{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #wrapper .scroller ul li p{
+        flex:1;
+    }
+    #wrapper .scroller ul li p.time{
+        flex:2;
+        font-size: .24rem;
+        color:#666;
+    }
+</style>
+{/block}
+
+{block name="content"}
+    <div class="header">
+        <div class="header_l">
+         <a href="{:url('/mobile/Transaction/balance_trade')}"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+        </div>
+        <div class="header_c"><h2>{:lang('交易记录')}</h2></div>
+        <div class="header_r" ><a href="javascript:void(0)" id="hide" ><img src="__MOBILE__/images/youmore_n1.png" alt=""></a>
+            <div id="p1">
+                <div class="down"></div>
+                <div class="xsh">
+                    <ul class="coin">
+                        <li><a href="">易物币</a></li>
+                        <li><a href="">Bitcoin</a></li>
+                        <li><a href="">Ethereum</a></li>
+                        <li><a href="">USDT</a></li>
+                        <li class="off"><a href="">TRX</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="reveal-modal-bg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="big_width100">  
+        <div class="yugejil"  style="width: 100%;position: absolute;top:50px;" >
+            <p >{:lang('甲方')}</p>
+            <p >{:lang('类型')}</p>
+            <p >{:lang('乙方')}</p>
+            <p >{:lang('数量')}</p>
+            <p >{:lang('总价')}</p>
+            <p class="time">{:lang('时间')}</p>
+        </div>
+        <div id="wrapper" style="width: 100%;position: absolute;top:90px;z-index: inherit;" >
+            <div class="scroller">
+                <ul>
+                        {if count($list)>0 }
+                        {volist name="list" id="vo"}
+                        <li>          
+                             <p >{$vo.users.nickname}</p>
+
+                            <p >{$vo.type}</p>
+                            <p >{$vo.user.nickname}</p>
+                            <p >{$vo.num}</p>
+            
+                            <p >{$vo.tprice}</p> 
+                            <p class="time">{$vo.create_time}</p>
+                        </li>
+                       
+                      {/volist} 
+                      {/if}
+                </ul>
+                <!--   <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div> -->
+            </div>
+        </div>
+    </div>
+
+
+{/block}
+{block name="js"}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("#p1").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+                });
+            });
+
+            $('.reveal-modal-bg').click(function () {
+                $("#p1").toggle();
+            })
+
+            $('.coin').click(function () {
+                $("#p1").toggle();
+            })
+         </script>
+{/block}
+

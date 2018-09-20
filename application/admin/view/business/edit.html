@@ -1,0 +1,100 @@
+{extend name="base"/}
+{block name="content"}
+<form class="layui-form" id="complaintForm" >
+    <div class="layui-form-item">
+        <label class="layui-form-label">商家id</label>
+        <div class="layui-input-block">
+            <input type="text" name="userid" class="layui-input newsName" readonly value="{$data.userid}" >
+        </div>
+    </div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">商家名称</label>
+		<div class="layui-input-block">
+			<input type="text" name="nums" value="{$data.name}" readonly class="layui-input newsName"  >
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">选择框</label>
+		<div class="layui-input-block">
+			<select name="category" lay-verify="required" disabled>
+				{foreach $typeInfo as $key=>$vo}
+				<option value="{$vo.typeid}" {if condition="$vo.typeid == $data.category"}selected{/if}>{$vo.type_name}</option>
+				{/foreach}
+			</select>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">联系人</label>
+		<div class="layui-input-block">
+			<input type="text" name="contact" value="{$data.contact}" readonly class="layui-input newsName"  >
+		</div>
+	</div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">联系电话</label>
+        <div class="layui-input-block">
+            <input type="text" name="mobile" value="{$data.mobile}" readonly class="layui-input  newsName"  >
+        </div>
+    </div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">详细地址</label>
+		<div class="layui-input-block">
+			<input type="text" name="address" value="{$data.address}" readonly class="layui-input  newsName"  >
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">营业时间</label>
+		<div class="layui-input-block">
+			<input type="text" name="address" value="{$data.start_time}" readonly class="layui-input  newsName"  style="width: 5%;display: inline">  至
+			<input type="text" name="address" value="{$data.end_time}" readonly class="layui-input  newsName"  style="width: 5%;display: inline">
+		</div>
+	</div>
+	<div class="layui-form-item layui-form-text">
+		<label class="layui-form-label">商家介绍</label>
+		<div class="layui-input-block">
+			<textarea name="desc"  class="layui-textarea" readonly>{$data.introduce}</textarea>
+		</div>
+	</div>
+	<div class="layui-form-item layui-form-text">
+		<label class="layui-form-label">购买须知</label>
+		<div class="layui-input-block">
+			<textarea name="desc"  class="layui-textarea" readonly>{$data.notice}</textarea>
+		</div>
+	</div>
+	<style>
+		.imgbox div{display: inline-block;text-align: center}
+	</style>
+	<div class="layui-form-item layui-form-text">
+		<label class="layui-form-label">商家照片</label>
+		<div class="layui-input-block imgbox">
+			<div><img src="{$data.shop_img}" alt="" style="width:100px;height: 100px"> <p>(门店照片)</p> </div>
+			<div><img src="{$data.business_img}" alt="" style="width:100px;height: 100px"><p>(营业执照)</p></div>
+		</div>
+	</div>
+	<div class="layui-form-item layui-form-text">
+		<label class="layui-form-label">商家照片</label>
+		<div class="layui-input-block imgbox">
+			{foreach $data.orga_img as $k=>$v}
+			<div><img src="{$v}" alt="" style="width:150px;"> <p>(机构照片)</p> </div>
+			{/foreach}
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">审核状态</label>
+		<div class="layui-input-block">
+			<input type="text" name="status" value="{$data.status}" readonly class="layui-input  newsName"  >
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">申请时间</label>
+		<div class="layui-input-block">
+			<input type="text" name="time" class="layui-input newsName" readonly value="{$data.create_time}" lay-verify="required" >
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit="" lay-filter="businessEdit">审核通过</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}<script type="text/javascript" src="__ADMIN__/js/businessEdit.js"></script>{/block}

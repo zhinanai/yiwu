@@ -1,0 +1,315 @@
+{extend name="base"/}
+{block name="title"}
+	首页
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/wenStyle.css"/>
+<style>
+	body{ text-align: left;}
+   .big_width100{background: #FBF8EF;margin: 0;}
+   .iconfont{font-size: 1rem;}
+   .language{padding: .3rem;}
+   #hide{position: relative;}
+	.w_cunruyue{position: absolute;top: 0;width: 50%;left: 25%;text-align: center;font-size: .5rem;color: #d92d2d;line-height: .8rem;font-weight: 600;letter-spacing: 10px;}
+</style>
+{/block}
+{block name="content"}
+<div class="big_width100" style="background: #fff">
+    <div>
+		<div class="wen-header">
+			 <div class="language">
+		       <div class="yuyan">
+		        <select class='btn'>
+		            <option value=''>语言</option>
+		            <option value='cn' {if $lang=='zh-cn'} selected="selected" {/if}>中</option>
+		            <option value='en' {if $lang=='en-us'} selected="selected" {/if}>ENG</option>
+		            <option value='vi' {if $lang=='vi'} selected="selected" {/if}>Tiếng Việt</option>
+		        </select>
+		       </div>
+		    </div>
+
+			<div class="header-info">
+				<a onclick="BSL.Qcode('0','qrcodeCallback')" class="shaom">
+					<i class="iconfont icon-saoyisao"></i>
+					<p>{:lang('扫一扫')}</p>
+				</a>
+			</div>
+			<ul class="header-money flex">
+                <li>
+					<a href="javascript:;">
+						<p>{:lang('余额')}</p>
+						<span>{$money['wallet_num']}</span>
+					</a>
+				</li>
+				<li class="center">
+					<a href="javascript:;">
+						<p>{$user['nickname']}</p>
+						<span>UID:{$user['id']}</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p>{:lang('积分')}</p>
+						<span>{$money['integral_num']}</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="header-btn flex">
+				<li>
+					<a href="{:url('/mobile/growth/intro')}">
+						<i class="iconfont icon-erweima"></i>
+						<p>{:lang('收款码')}</p>
+					</a>
+				</li>
+				<li>
+					<a href="{:url('/mobile/index/turnout')}">
+						<i class="iconfont icon-zhuanzhang"></i>
+						<p>{:lang('转账')}</p>
+					</a>
+				</li>
+				<li>
+					<!-- <a href="{:url('/mobile/Growth/buycenter')}">
+						<i class="iconfont icon-jiaoyi"></i>
+						<p>{:lang('交易')}</p>
+					</a> -->
+					<a href="{:url('/mobile/Growth/buycenter')}">
+						<i class="iconfont icon-jiaoyi"></i>
+						<p>{:lang('买卖')}</p>
+					</a>
+
+				</li>
+				<!-- <li>
+				    <a onclick="BSL.Qcode('0','qrcodeCallback')" class="shaom">
+					<i class="iconfont icon-saoyisao"></i>
+					<p>{:lang('扫一扫')}</p>
+				   </a> 
+				    <a href="{:url('/mobile/Trading/selldets')}">
+						<i class="iconfont icon-jiaoyi"></i>
+						<p>{:lang('卖出')}</p>
+					</a>
+				</li> -->
+			</ul>
+			 
+		</div>
+	</div>
+	<div class="swiper-container myimg">
+		<div class="swiper-wrapper imgbox">
+			{foreach $imgs as $img}
+			<div class="swiper-slide"><img src="{$img['img']}"></div>
+			{/foreach}
+		</div>
+		<div class="swiper-pagination"></div>
+	</div> 
+	<div>
+		<div class="record_list flex">
+			<a href="javascript:;" class="on"><span>{:lang('金积分明细')}</span></a>
+			<a href="javascript:;"><span>{:lang('银积分明细')}</span></a>
+		</div>
+		<div>
+			<div class="content_box">
+				<div class="list_content active"  style="padding-bottom: 1rem">
+					<div class="list_thred flex">
+						<p>{:lang('类型')}</p>
+						<p>{:lang('金额')}</p>
+						<p>{:lang('当前金积分')}</p>
+						<p>{:lang('时间')}</p>
+					</div>
+					<ul class=" list_content1">
+						{foreach $wallet as $key=>$vo}
+						<li>
+							<p>{:lang($vo.type)}</p>
+							<p>{$vo.money}</p>
+							<p>{$vo.now_wallet}</p>
+							<p>{$vo.create_time}</p>
+						</li>
+						{/foreach}
+					</ul>
+					<div class="addlist">
+						<div class="load load1"><img src="__MOBILE__/images/loading.gif" alt=""></div>
+						<p id="add" class="addmore">{:lang('点击加载更多')}</p>
+                        <!--<a>版权所有©朗金科技</a>-->
+					</div>
+				</div>
+				<div class="list_content"  style="padding-bottom: 1rem">
+					<div class="list_thred flex">
+						<p>{:lang('类型')}</p>
+						<p>{:lang('金额')}</p>
+						<p>{:lang('当前银积分')}</p>
+						<p>{:lang('时间')}</p>
+					</div>
+					<ul class=" list_content2">
+						{foreach $integral as $key=>$vo}
+						<li>
+							<p>{:lang($vo.type)}</p>
+							<p>{$vo.num}</p>
+							<p>{$vo.now_integral}</p>
+							<p>{$vo.create_time}</p>
+						</li>
+						{/foreach} 
+					</ul>
+					<div class="addlist">
+						<div class="load load2"><img src="__MOBILE__/images/loading.gif" alt=""></div>
+						<p id="add2" class="addmore">{:lang('点击加载更多')}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="height: .92rem;"></div>
+<div class="footer-fan">
+	<a href="{:url('/mobile/index/index')}" class="active">
+		<i class="iconfont icon-shouye"></i>
+		<p>{:lang('首页')}</p>
+	</a>
+	<a href="{:url('/mobile/Digitalassets/index')}">
+		<i class="iconfont icon-money"></i>
+		<p>{:lang('资产')}</p>
+	</a>
+	<a href="{:url('/mobile/Shop/index')}" class="">
+		<i class="iconfont icon-shangcheng"></i>
+		<p>{:lang('商城')}</p>
+	</a>
+	<a href="{:url('/mobile/user/index')}">
+		<i class="iconfont icon-jingjirenjinglikehuxianxingcopy"></i>
+		<p>{:lang('我的')}</p>
+	</a>
+</div>
+<div class="money-pag" style="display: none;">
+	<div class="qindHB_bg"></div>
+
+	<div class="qindHB">
+		<div class="qindHB_nb">
+			<img src="__MOBILE__/images/hongbaoyem.png" class="qinb_imga">
+			<a href="javascript:void(0);" id="hide">
+				<img src="__MOBILE__/images/cunryue.png">
+				<p class="w_cunruyue">{:lang('存入金积分')}</p>
+			</a>
+			<div class="qiandHB_wz">
+				<h3><span class="getnums">0.15</span>元</h3>
+				<p>{:lang('天天签到红包不断')}</p>
+			</div>
+		</div>
+	</div>
+</div>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__MOBILE__/js/swiper.min.js"></script>
+<script>
+//语言
+    $('.btn').change(function(){
+        var data={'lang':$('.btn').val()}
+        console.log(data);
+        $.get("{:url('mobile/Login/lang')}",data,function(){
+            location.reload();
+        })
+    })
+	// 轮播图
+ var mySwiper = new Swiper(".swiper-container",{
+  direction:"horizontal",
+  loop:true,
+  pagination:".swiper-pagination",
+  autoplay:3000,
+  autoplayDisableOnInteraction : false,
+  });
+$(function () {
+	$.get("{:url('/mobile/login/hongbao')}",function(res){
+		var data = eval('(' + res + ')');
+		console.log(data);
+		if(data[0].hongbao=='1'){
+			$('.money-pag').hide();
+		}else{
+			$('.money-pag').show();
+			$('.getnums').html(data[0].money)
+		}
+	})
+	$('#hide').click(function () {
+		$.get("{:url('/mobile/login/linghongbao')}",function(res){
+			var data=eval('(' + res + ')');
+			console.log(data);
+			if(data.type==1){
+				$('.money-pag').hide();
+                window.location.reload();
+			}else if(data.type==2){
+                $('.money-pag').hide();
+			}else{
+				$('.money-pag').show();
+			}
+		})
+	})
+	// 选项卡
+	$(".record_list>a").click(function(){
+		var n = $(".record_list>a").index($(this));
+		$(this).addClass('on').siblings().removeClass('on');
+		$(".content_box>div").removeClass('active').eq(n).addClass('active');
+	});
+});
+    var page = 1;
+    var page2 = 1;
+	$("#add").on("click",function () {
+		var that = this;
+		$(".load1").show();
+		$(that).hide();
+        page++;
+        $.ajax({
+            type: 'POST',
+            url: '/mobile/Index/wallet',
+            data: {page: page},
+            dataType: 'json',
+            success: function (data) {
+				$(".load1").hide();
+		        $(that).show();
+                var str = "";
+                if (data.status == 1) {
+                    $.each(data.data,function (key,value) {
+                        str += '<li><p>'+value.type+'</p>';
+                        str += '<p>'+value.money+'</p>';
+                        str += '<p>'+value.now_wallet+'</p>';
+                        str += '<p>'+value.create_time+'</p></li>';
+                    });
+                    $(".list_content1").append(str);
+                } else {
+                    $(that).html("{:lang('没有更多记录了')}...");
+                }
+            }
+        })
+    });
+    $("#add2").on("click",function () {
+		var that = this;
+		$(".load2").show();
+		$(that).hide();
+        page2++;
+        $.ajax({
+            type: 'POST',
+            url: '/mobile/Index/integral',
+            data: {page: page2},
+            dataType: 'json',
+            success: function (data) {
+				$(".load2").hide();
+		        $(that).show();
+                var str = "";
+                if (data.status == 1) {
+                    $.each(data.data,function (key,value) {
+                        str += '<li><p>'+value.type+'</p>';
+                        str += '<p>'+value.num+'</p>';
+                        str += '<p>'+value.now_integral+'</p>';
+                        str += '<p>'+value.create_time+'</p></li>';
+                    });
+                    $(".list_content2").append(str);
+                } else {
+					$(that).html("{:lang('没有更多记录了')}...");
+                }
+            }
+        })
+    })
+</script>
+<!--扫一扫调用-->
+<script>
+    function Dosaoyisao() {
+        qrcodeCallback();
+    }
+    function qrcodeCallback(result){
+		window.location.href=result;
+    }
+</script>
+{/block}

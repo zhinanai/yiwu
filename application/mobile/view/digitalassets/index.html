@@ -1,0 +1,167 @@
+
+{extend name="base"/}
+{block name="title"}
+    数字资产
+{/block}
+{block name="css"}
+    <link rel="stylesheet" href="__MOBILE__/css/fanStyle.css"/>
+{/block}
+
+{block name="content"}
+
+<!-- <div class="header">
+    <div class="header_l">
+        <a href="{:url('/mobile/Index/index')}"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>{:lang('数字资产')}</h2></div>
+    <div class="header_r"><a href="{:url('/mobile/Digitalassets/trade_records')}">{:lang('交易记录')}</a></div>
+</div> -->
+<div class="big_width100" style="margin-top: 0;">
+    <div class="big_bg">
+        <div class="shuzbzonge">
+            <!-- <img src="__MOBILE__/images/toux-icon.png" class="icon">
+            <p>{:lang('当前价格')}：<span>￥{$coindets.0.coin_price}</span></p> -->
+            <style>
+                .two_money{width: 100%;text-align: center;align-items: center;}
+                .two_money li{width: 50%;color: #f1ad46;font-size: .32rem; margin: .5rem 0;}
+                .two_money li p{margin-top: .2rem}
+                .two_money li:nth-child(1){border-right: 1px solid #f1ad46}
+                .copy {color:#f1ad46;width: 100%;display: flex;align-items: center;padding: .2rem;font-size: .26rem; }
+                .copy button{color: #f1ad46}
+                #content{width:60%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
+            </style>
+            <ul class="two_money flex">
+                <li>
+                    <span>{$myassets.c_nums ? $myassets.c_nums:'0.0000'}</span>
+                    <p>{:lang('资产')}</p>
+                </li>
+                <li>
+                    <span>{$coindets.0.coin_price}</span>
+                    <p>{:lang('当前价格')}</p>
+                </li>
+            </ul>
+        <div class="wpaeyzic">
+            
+            <!-- <p  class="zichan">{:lang('我的资产')}<span>￥{$myassets.c_nums}</span></p> -->
+            <div class="copy">
+                <p style="width: 20%">{:lang('钱包地址')}:</p>
+                <p id="content">{$wallet_add.wallet_add}</p>
+                <div style="width: 20%;"><button id="copyBT">{:lang('复制地址')}</button></div>
+            </div>
+
+        </div>
+        </div>
+        <div class="wpzicicon">
+            <ul class="clear_wl">
+                <li>
+                    <a href="{:url('/mobile/Digitalassets/turnout')}">
+                        <!-- <img src="__MOBILE__/images/out.png" alt=""> -->
+                        <i class="iconfont icon-zhuanchu"></i>
+                        <p>{:lang('转出')}</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{:url('/mobile/Crowd/crowds')}">
+                        <!-- <img src="__MOBILE__/images/zhongchou.png" alt=""> -->
+                        <i class="iconfont icon-zhongchou"></i>
+                        <p>{:lang('众筹')}</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{:url('/mobile/Digitalassets/wallet')}">
+                        <!-- <img src="__MOBILE__/images/qianbao.png" alt=""> -->
+                        <i class="iconfont icon-qiabao"></i>
+                        <p>{:lang('易宝')}</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{:url('/mobile/Transaction/balance_trade',['cid'=>1])}">
+                        <!-- <img src="__MOBILE__/images/jiaoyi.png" alt=""> -->
+                        <i class="iconfont icon-icon64"></i>
+                        <p>{:lang('交易')}</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dis_biz">
+           
+                    {volist name="coindets" id="vo"}
+                <div class="dis_biz_wp">
+                    <div class="Dbiz_titie">
+                        <p><b class="wpae_stc0"></b>{$vo.coin_name}</p>
+                    </div>
+                    <div class="dis_biz_cop clear_wl">
+                        <div class="dis_biz_copa">
+                            <p>{$vo.coin_name=='易物币' ? $myassets.c_nums : '0.0000'}</p>
+                            
+                            
+                            <p><span>{$vo.coin_name}</span></p>
+                        </div>
+                        <div class="dis_biz_copb">
+                            <p>{$vo.coin_price}</p>
+                            <p><span>{:lang('当前价格')}</span></p>
+                        </div>
+                        <div class="dis_biz_copc">
+                            {if $vo.coin_name=='易物币' }
+                            <a href="{:url('/mobile/Transaction/balance_trade',['cid'=>1,'coin_name'=>$vo.coin_name])}" class="yugejiaoy">{:lang('余额交易')}</a>
+                            {else}
+                            <a href="{:url('/mobile/Transaction/balance_trade',['cid'=>$vo.cid,'coin_name'=>$vo.coin_name])}" class="yugejiaoy">{:lang('余额交易')}</a>
+                            {/if}
+                            <a href="###"   class="xianzjiaoy">{:lang('现金交易')}</a>                       
+                        </div>
+                    </div>
+                </div>
+                {/volist}
+            <div style="height: .92rem;"></div>
+            <div class="footer-fan">
+                <a href="{:url('/mobile/index/index')}">
+                    <i class="iconfont icon-shouye"></i>
+                    <p>{:lang('首页')}</p>
+                </a>
+                <a href="{:url('/mobile/Digitalassets/index')}"  class="active">
+                    <i class="iconfont icon-money"></i>
+                    <p>{:lang('资产')}</p>
+                </a>
+                <a href="{:url('/mobile/index/redpay')}">
+                    <i class="iconfont icon-hongbao"></i>
+                    <p>{:lang('红包')}</p>
+                </a>
+                <a href="{:url('/mobile/Shop/navigation')}">
+                    <i class="iconfont icon-daohang"></i>
+                    <p>{:lang('导航')}</p>
+                </a>
+                <a href="{:url('/mobile/user/index')}">
+                    <i class="iconfont icon-jingjirenjinglikehuxianxingcopy"></i>
+                    <p>{:lang('我的')}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/block}
+
+ {block name="js"}
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+        $(".xianzjiaoy").click(function(){
+            msg_alert("{:lang('暂时不支持现金交易')}");
+        });
+    });
+
+    function copyArticle(event) {
+        const range = document.createRange();
+        range.selectNode(document.getElementById('content'));
+
+        const selection = window.getSelection();
+        if (selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        msg_alert("{:lang('复制成功')}！");
+    }
+
+    document.getElementById('copyBT').addEventListener('click', copyArticle, false);
+</script>
+{/block}

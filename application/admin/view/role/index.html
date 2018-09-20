@@ -1,0 +1,52 @@
+{extend name="base"/}
+{block name="css"}
+	<link rel="stylesheet" href="__ADMIN_/css/user.css" media="all" />
+	<style>
+		.layui-elem-quote{background: rgba(0,0, 0, 0.3);}
+		.layui-elem-quote .layui-btn{background: #009688;}
+		.layui-table thead tr{background: rgba(0,0, 0, 0.4);}
+		.layui-table{color: #fff;background: rgba(0,0, 0, 0.3);}
+		.layui-table-hover{background: rgba(0,0, 0, 0.4) !important;}
+		.layui-form-mid{color: #fff !important;}
+		.layui-laypage span{color:#fff;}
+		.layui-laypage .layui-laypage-skip {height: 30px;line-height: 30px;color: #fff;}
+		.layui-table-page .layui-laypage a {color: #fff;}
+		.layui-input{background: rgba(0,0, 0, 0.3); color: #fff;}
+		.layui-table-page .layui-laypage input {color: #000;}
+		body{background: none !important;}
+	</style>
+	{/block}
+{block name="content"}
+	<blockquote class="layui-elem-quote news_search">
+			<div class="layui-inline">
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input searchVal" placeholder="请输入搜索的内容">
+					</div>
+					<a class="layui-btn search_btn" data-type="reload">搜索</a>
+				</div>
+		<div class="layui-inline">
+			<a class="layui-btn layui-btn-normal roleAdd_btn">添加角色</a>
+		</div>
+		<!-- <div class="layui-inline">
+			<a class="layui-btn layui-btn-danger batchDel">批量删除</a>
+		</div> -->
+		<div class="layui-inline">
+			<div class="layui-form-mid layui-word-aux">　谨慎修改权限节点</div>
+		</div>
+	</blockquote>
+	
+	
+	<table id="list" lay-filter="role" ></table>
+	<script type="text/html" id="barDemo">
+		{{# if(d.id==1){ }}
+		<a class="layui-btn layui-btn-xs" >拥有所有权限</a>
+		{{# }else{ }}
+		<a class="layui-btn layui-btn-xs " lay-event="edit">分配节点</a>
+		<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+		{{# } }}
+		
+		
+	  </script>
+{/block}
+
+	{block name="js"}<script type="text/javascript" src="__ADMIN__/js/rolelist.js"></script>{/block}

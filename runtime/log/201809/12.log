@@ -1,0 +1,1987 @@
+---------------------------------------------------------------
+[ 2018-09-12T23:58:08+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/index
+[运行时间：0.032336s] [吞吐率：30.93req/s] [内存消耗：3,324.41kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9125 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9125 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9125  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009382s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:09+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.022364s] [吞吐率：44.71req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9125 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001684s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:10+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.022143s] [吞吐率：45.16req/s] [内存消耗：3,193.59kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000162s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:16+08:00 ] 140.243.114.133 POST yiwuqianbao.com/mobile/Index/Exehange
+[运行时间：0.106569s] [吞吐率：9.38req/s] [内存消耗：3,370.63kb] [文件加载：94]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=k8lbvc4nijcunlka91es2kebjn',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/Index/exehange',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Plus Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://yiwuqianbao.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '20',
+)
+[ info ] [ PARAM ] array (
+  'dhnums' => '37',
+  'pwd' => '628166',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 9 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 21 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT `safety_pwd` FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 677250.5529 , `wallet_num` = 9600.2559  WHERE  `uid` = 9115 [ RunTime:0.003679s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9115 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000265s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9115 , 222 , 8 , 677028.5529 , 677250.5529 , 1536767896) [ RunTime:0.002549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000342s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9115 , -37 , 3 , 9637.2559 , 9600.2559 , 1536767896) [ RunTime:0.002654s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 25 ORDER BY `id` ASC [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 22 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9108 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT `user_grade` FROM `zm_user_level` WHERE  `userid` = 9108 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9108 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9119 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9253 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9306 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9350 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9476 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 1111331.8126 , `wallet_num` = 13782.1302  WHERE  `uid` = 9108 [ RunTime:0.002318s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9108 , -2.96 , 2 , 1111334.7726 , 1111331.8126 , 1536767896) [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9108 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9108 , 2.96 , 6 , 13779.1702 , 13782.1302 , 1536767896) [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `zm_reward` WHERE  `group` = 18 ORDER BY `id` ASC [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 19 ORDER BY `id` ASC [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 22 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `path` FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9108 LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9108 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9119 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9253 LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9306 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9350 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9476 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 1111331.4426 , `wallet_num` = 13782.5002  WHERE  `uid` = 9108 [ RunTime:0.002340s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9108 , -0.37 , 3 , 1111331.8126 , 1111331.4426 , 1536767896) [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9108 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9108 , 0.37 , 7 , 13782.1302 , 13782.5002 , 1536767896) [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9101 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9101 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9103 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9104 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9105 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9106 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9107 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9108 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9109 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 10130 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 3161081.9752 , `wallet_num` = 6827916.2929  WHERE  `uid` = 9101 [ RunTime:0.002339s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (9101 , -0.37 , 3 , 3161082.3452 , 3161081.9752 , 1536767896) [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9101 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (9101 , 0.37 , 7 , 6827915.9229 , 6827916.2929 , 1536767896) [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 8596 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT `integral_num`,`wallet_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 8596 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9101 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 9102 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 10088 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] UPDATE `zm_money`  SET `integral_num` = 0 , `wallet_num` = 0  WHERE  `uid` = 8596 [ RunTime:0.002313s ]
+[ sql ] [ SQL ] INSERT INTO `zm_integral_log` (`userid` , `num` , `type` , `before_integral` , `now_integral` , `create_time`) VALUES (8596 , 0 , 3 , NULL , 0 , 1536767896) [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `integral_num` FROM `zm_money` WHERE  `uid` = 8596 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 8596 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_reward` WHERE  `group` = 2 ORDER BY `id` ASC [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 23 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] INSERT INTO `zm_wallet_log` (`userid` , `money` , `type` , `before_wallet` , `now_wallet` , `create_time`) VALUES (8596 , 0 , 7 , NULL , 0 , 1536767896) [ RunTime:0.000136s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:16+08:00 ] 223.104.6.105 POST yiwuqianbao.com/mobile/login/dologin
+[运行时间：0.025007s] [吞吐率：39.99req/s] [内存消耗：3,161.97kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/login/login',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://yiwuqianbao.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '22',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '9117',
+  'pwd' => '628166',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `mobile` = '9117' OR `id` = 9117 LIMIT 1 [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:17+08:00 ] 140.243.114.133 GET yiwuqianbao.com/mobile/Index/exehange
+[运行时间：0.020207s] [吞吐率：49.49req/s] [内存消耗：3,221.60kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=k8lbvc4nijcunlka91es2kebjn',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/Index/exehange',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Plus Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/exehange.html [ array (
+  0 => 'ratio',
+  1 => 'money',
+  2 => 'exchange',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 9 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 21 LIMIT 1 [ RunTime:0.000094s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:18+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/index
+[运行时间：0.035351s] [吞吐率：28.29req/s] [内存消耗：3,324.47kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9117 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9117 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9117  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009361s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:18+08:00 ] 140.243.114.133 GET yiwuqianbao.com/mobile/index/index
+[运行时间：0.031760s] [吞吐率：31.49req/s] [内存消耗：3,324.52kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=k8lbvc4nijcunlka91es2kebjn',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Plus Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9115  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009187s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:19+08:00 ] 140.243.114.133 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.020635s] [吞吐率：48.46req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=k8lbvc4nijcunlka91es2kebjn',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Plus Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000332s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9115 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001583s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:19+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021546s] [吞吐率：46.41req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9117 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001637s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:19+08:00 ] 140.243.189.3 GET yiwuqianbao.com/mobile/Index/changeout/trid/10184
+[运行时间：0.020889s] [吞吐率：47.87req/s] [内存消耗：3,229.45kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=inpoqnqc1h9cr51qga0pg5v2gd',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; vivo Y66 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044113 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+  'trid' => '10184',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/changeout.html [ array (
+  0 => 'user',
+  1 => 'transfer',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT `id`,`mobile`,`head_img`,`nickname` FROM `zm_user` WHERE  `id` = 10184 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 20 LIMIT 1 [ RunTime:0.000140s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:20+08:00 ] 117.28.183.40 GET yiwuqianbao.com/mobile/index/turnout
+[运行时间：0.018864s] [吞吐率：53.01req/s] [内存消耗：3,182.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lnaee6viboghro9cq8tm7a4snt',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/tpg,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.2; vivo X9 Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044302 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/turnout.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000215s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:23+08:00 ] 117.28.183.40 GET yiwuqianbao.com/mobile/Index/Turncords
+[运行时间：0.086921s] [吞吐率：11.50req/s] [内存消耗：3,262.94kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lnaee6viboghro9cq8tm7a4snt',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/turnout',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/tpg,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.2; vivo X9 Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044302 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/turncords.html [ array (
+  0 => 'wallet',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000584s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10233  AND `type` = 1 ORDER BY `id` DESC [ RunTime:0.023646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10384 LIMIT 1 [ RunTime:0.000155s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:24+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.057426s] [吞吐率：17.41req/s] [内存消耗：3,193.59kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000583s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:30+08:00 ] 223.104.6.105 POST yiwuqianbao.com/mobile/login/dologin
+[运行时间：0.047124s] [吞吐率：21.22req/s] [内存消耗：3,161.99kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/login/login',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://yiwuqianbao.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '22',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '9115',
+  'pwd' => '628166',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `mobile` = '9115' OR `id` = 9115 LIMIT 1 [ RunTime:0.000485s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:32+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/index
+[运行时间：0.081850s] [吞吐率：12.22req/s] [内存消耗：3,324.49kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9115  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.013737s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:32+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021069s] [吞吐率：47.46req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000331s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9115 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001715s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:32+08:00 ] 140.243.189.3 GET yiwuqianbao.com/mobile/Index/turnout
+[运行时间：0.018731s] [吞吐率：53.39req/s] [内存消耗：3,182.70kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=inpoqnqc1h9cr51qga0pg5v2gd',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/Index/changeout/trid/10184',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; vivo Y66 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044113 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/turnout.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:34+08:00 ] 140.243.189.3 GET yiwuqianbao.com/mobile/Index/changeout/trid/10184
+[运行时间：0.039366s] [吞吐率：25.40req/s] [内存消耗：3,229.45kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=inpoqnqc1h9cr51qga0pg5v2gd',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; vivo Y66 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044113 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+  'trid' => '10184',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/changeout.html [ array (
+  0 => 'user',
+  1 => 'transfer',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT `id`,`mobile`,`head_img`,`nickname` FROM `zm_user` WHERE  `id` = 10184 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_reward` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT `value` FROM `zm_reward` WHERE  `group` = 20 LIMIT 1 [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:34+08:00 ] 140.243.189.3 GET yiwuqianbao.com/mobile/index/turnout
+[运行时间：0.021859s] [吞吐率：45.75req/s] [内存消耗：3,182.57kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=inpoqnqc1h9cr51qga0pg5v2gd',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; vivo Y66 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044113 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/turnout.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000265s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:35+08:00 ] 140.243.189.3 GET yiwuqianbao.com/mobile/index
+[运行时间：0.033065s] [吞吐率：30.24req/s] [内存消耗：3,324.16kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=inpoqnqc1h9cr51qga0pg5v2gd',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; vivo Y66 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044113 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 10228 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 10228 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10228  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009219s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:36+08:00 ] 140.243.189.3 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.019520s] [吞吐率：51.23req/s] [内存消耗：3,193.43kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=inpoqnqc1h9cr51qga0pg5v2gd',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; vivo Y66 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044113 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000244s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:36+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/Shop/navigation
+[运行时间：0.018465s] [吞吐率：54.16req/s] [内存消耗：3,092.05kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/shop/navigation.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:39+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/User/Teamdets
+[运行时间：0.048940s] [吞吐率：20.43req/s] [内存消耗：3,281.31kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/Shop/navigation',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/user/teamdets.html [ array (
+  0 => 'team',
+  1 => 'users',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] select * FROM zm_user where FIND_IN_SET(9115,path) [ RunTime:0.001806s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `parent_id` = 9115 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9117 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9245 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9246 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9247 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9251 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9255 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9265 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9282 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9283 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT `uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9479 LIMIT 1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:43+08:00 ] 223.104.6.22 GET yiwuqianbao.com/
+[运行时间：0.057323s] [吞吐率：17.45req/s] [内存消耗：3,028.02kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l8sotmfhkahinva084n41uimpf',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1; vivo X21A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000537s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:43+08:00 ] 223.104.6.22 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.020807s] [吞吐率：48.06req/s] [内存消耗：3,192.63kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l8sotmfhkahinva084n41uimpf',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1; vivo X21A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000260s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000221s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:46+08:00 ] 223.104.6.22 POST yiwuqianbao.com/mobile/login/dologin
+[运行时间：0.037556s] [吞吐率：26.63req/s] [内存消耗：3,161.90kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l8sotmfhkahinva084n41uimpf',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/login/login',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1; vivo X21A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://yiwuqianbao.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '33',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '15880292510',
+  'pwd' => 'jiweixi520',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `mobile` = '15880292510' OR `id` = 15880292510 LIMIT 1 [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:47+08:00 ] 223.104.6.22 GET yiwuqianbao.com/mobile/index
+[运行时间：0.057917s] [吞吐率：17.27req/s] [内存消耗：3,324.43kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l8sotmfhkahinva084n41uimpf',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1; vivo X21A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9492 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9492 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9492  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009715s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:48+08:00 ] 223.104.6.22 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.025016s] [吞吐率：39.97req/s] [内存消耗：3,181.86kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l8sotmfhkahinva084n41uimpf',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1; vivo X21A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000326s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9492 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001543s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:52+08:00 ] 117.28.183.40 GET yiwuqianbao.com/mobile/Index/index
+[运行时间：0.060154s] [吞吐率：16.62req/s] [内存消耗：3,324.52kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lnaee6viboghro9cq8tm7a4snt',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/Index/Turncords',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/tpg,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.2; vivo X9 Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044302 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 10233 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 10233 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10233  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.010349s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:58:52+08:00 ] 117.28.183.40 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021156s] [吞吐率：47.27req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lnaee6viboghro9cq8tm7a4snt',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/Index/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.2; vivo X9 Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044302 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 10233 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001686s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:08+08:00 ] 223.104.6.22 GET yiwuqianbao.com/mobile/user/index
+[运行时间：0.025963s] [吞吐率：38.52req/s] [内存消耗：3,233.78kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l8sotmfhkahinva084n41uimpf',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1; vivo X21A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/user/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'userlevel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000292s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9492 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 9492 LIMIT 1 [ RunTime:0.000234s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:14+08:00 ] 223.104.6.34 GET yiwuqianbao.com/mobile/index/turnout
+[运行时间：0.057442s] [吞吐率：17.41req/s] [内存消耗：3,028.27kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5f49n7ejsqp3j72u7c491e0uke',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; JMM-AL00 Build/HONORJMM-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:14+08:00 ] 223.104.6.34 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.019080s] [吞吐率：52.41req/s] [内存消耗：3,192.78kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5f49n7ejsqp3j72u7c491e0uke',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; JMM-AL00 Build/HONORJMM-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000365s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000145s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:16+08:00 ] 223.104.6.22 GET yiwuqianbao.com/mobile/index/redpay
+[运行时间：0.070911s] [吞吐率：14.10req/s] [内存消耗：3,314.21kb] [文件加载：91]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l8sotmfhkahinva084n41uimpf',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/user/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1; vivo X21A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/redpay.html [ array (
+  0 => 'countmoney',
+  1 => 'integral',
+  2 => 'wallet',
+  3 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT `id`,`head_img` FROM `zm_user` WHERE  `id` = 9492 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9492  AND `type` <> 15 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_integral_log` WHERE  `userid` = 9492 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9492  AND `type` IN (4,5,6,7,8,15)  AND `create_time` BETWEEN 1536681600 AND 1536767999 [ RunTime:0.014196s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:17+08:00 ] 223.104.6.22 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.045371s] [吞吐率：22.04req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l8sotmfhkahinva084n41uimpf',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1; vivo X21A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9492 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.002976s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:19+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/index/redpay
+[运行时间：0.040142s] [吞吐率：24.91req/s] [内存消耗：3,311.98kb] [文件加载：91]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/user/index',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/redpay.html [ array (
+  0 => 'countmoney',
+  1 => 'integral',
+  2 => 'wallet',
+  3 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `id`,`head_img` FROM `zm_user` WHERE  `id` = 10056 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` <> 15 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.003548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_integral_log` WHERE  `userid` = 10056 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.003573s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` IN (4,5,6,7,8,15)  AND `create_time` BETWEEN 1536681600 AND 1536767999 [ RunTime:0.011316s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:19+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.020687s] [吞吐率：48.34req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000368s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 10056 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001591s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:19+08:00 ] 223.104.6.34 POST yiwuqianbao.com/mobile/login/dologin
+[运行时间：0.018955s] [吞吐率：52.76req/s] [内存消耗：3,161.94kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5f49n7ejsqp3j72u7c491e0uke',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/login/login',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; JMM-AL00 Build/HONORJMM-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://yiwuqianbao.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '29',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13605906393',
+  'pwd' => '221658',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `mobile` = '13605906393' OR `id` = 13605906393 LIMIT 1 [ RunTime:0.000264s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:20+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/index/redpay
+[运行时间：0.039510s] [吞吐率：25.31req/s] [内存消耗：3,311.98kb] [文件加载：91]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/redpay.html [ array (
+  0 => 'countmoney',
+  1 => 'integral',
+  2 => 'wallet',
+  3 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `id`,`head_img` FROM `zm_user` WHERE  `id` = 10056 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` <> 15 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.003532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_integral_log` WHERE  `userid` = 10056 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.003394s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` IN (4,5,6,7,8,15)  AND `create_time` BETWEEN 1536681600 AND 1536767999 [ RunTime:0.011252s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:20+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.020484s] [吞吐率：48.82req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 10056 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001612s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:21+08:00 ] 223.104.6.34 GET yiwuqianbao.com/mobile/index
+[运行时间：0.031476s] [吞吐率：31.77req/s] [内存消耗：3,324.44kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5f49n7ejsqp3j72u7c491e0uke',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; JMM-AL00 Build/HONORJMM-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 10184 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 10184 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10184  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.008894s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:22+08:00 ] 223.104.6.34 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.020952s] [吞吐率：47.73req/s] [内存消耗：3,181.85kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5f49n7ejsqp3j72u7c491e0uke',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; JMM-AL00 Build/HONORJMM-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 10184 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001702s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:30+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/index/redpay
+[运行时间：0.079924s] [吞吐率：12.51req/s] [内存消耗：3,311.98kb] [文件加载：91]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/redpay.html [ array (
+  0 => 'countmoney',
+  1 => 'integral',
+  2 => 'wallet',
+  3 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT `id`,`head_img` FROM `zm_user` WHERE  `id` = 10056 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` <> 15 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.005597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_integral_log` WHERE  `userid` = 10056 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.003243s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` IN (4,5,6,7,8,15)  AND `create_time` BETWEEN 1536681600 AND 1536767999 [ RunTime:0.011043s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:30+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021482s] [吞吐率：46.55req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000394s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 10056 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001694s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:33+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/index/index
+[运行时间：0.030881s] [吞吐率：32.38req/s] [内存消耗：3,324.80kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 10056 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 10056 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.008646s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:33+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.020078s] [吞吐率：49.81req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/index',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000302s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 10056 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001540s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:33+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/Shop/navigation
+[运行时间：0.018799s] [吞吐率：53.19req/s] [内存消耗：3,092.05kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/shop/navigation.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000243s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:34+08:00 ] 223.104.95.54 GET yiwuqianbao.com/
+[运行时间：0.020520s] [吞吐率：48.73req/s] [内存消耗：3,027.85kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.2; vivo X9Plus Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000360s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:35+08:00 ] 223.104.95.54 GET yiwuqianbao.com/mobile/login/login
+[运行时间：0.019083s] [吞吐率：52.40req/s] [内存消耗：3,192.63kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j216b2poh3mfuqgh9vlknif3pk',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.2; vivo X9Plus Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/login/login.html [ array (
+  0 => 'mobile',
+  1 => 'lang',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000178s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:35+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/index
+[运行时间：0.032137s] [吞吐率：31.12req/s] [内存消耗：3,324.46kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9115  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009218s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:35+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/user/index
+[运行时间：0.021342s] [吞吐率：46.86req/s] [内存消耗：3,234.18kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/index',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/user/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'userlevel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000367s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 10056 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user_level` [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT `user_grade`,`uservip_grade` FROM `zm_user_level` WHERE  `userid` = 10056 LIMIT 1 [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:35+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021102s] [吞吐率：47.39req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9115 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001699s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:36+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/Shop/navigation
+[运行时间：0.018186s] [吞吐率：54.99req/s] [内存消耗：3,092.42kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/user/index',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/shop/navigation.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:38+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/growth/intro
+[运行时间：0.018721s] [吞吐率：53.42req/s] [内存消耗：3,115.40kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/growth/intro.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000163s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:38+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/index/redpay
+[运行时间：0.039974s] [吞吐率：25.02req/s] [内存消耗：3,311.98kb] [文件加载：91]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/Shop/navigation',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/redpay.html [ array (
+  0 => 'countmoney',
+  1 => 'integral',
+  2 => 'wallet',
+  3 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000237s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT `id`,`head_img` FROM `zm_user` WHERE  `id` = 10056 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` <> 15 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.003606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_integral_log` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_integral_log` WHERE  `userid` = 10056 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.003532s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 10056  AND `type` IN (4,5,6,7,8,15)  AND `create_time` BETWEEN 1536681600 AND 1536767999 [ RunTime:0.011371s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:38+08:00 ] 58.22.114.92 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.020123s] [吞吐率：49.69req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/redpay',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=9btpqd5re20afo01001pb0luij; BJYSESSION=a75mik1m3lgqkhis4vnv93uaf6',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 10056 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001523s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:38+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/growth/createcode
+[运行时间：0.036507s] [吞吐率：27.39req/s] [内存消耗：3,743.26kb] [文件加载：112]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/growth/intro',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000313s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000160s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:39+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/Growth/Introrecords
+[运行时间：0.035821s] [吞吐率：27.92req/s] [内存消耗：3,201.36kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/growth/intro',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/growth/introrecords.html [ array (
+  0 => 'wallet',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9115  AND `type` = 2 ORDER BY `id` DESC [ RunTime:0.014767s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT `nickname` FROM `zm_user` WHERE  `id` = 10419 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT `nickname` FROM `zm_user` WHERE  `id` = 10411 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT `nickname` FROM `zm_user` WHERE  `id` = 10410 LIMIT 1 [ RunTime:0.000117s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:51+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/growth/intro
+[运行时间：0.039144s] [吞吐率：25.55req/s] [内存消耗：3,115.40kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/growth/intro.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000447s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:52+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/growth/createcode
+[运行时间：0.036723s] [吞吐率：27.23req/s] [内存消耗：3,743.26kb] [文件加载：112]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/growth/intro',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000331s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000205s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:53+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/index
+[运行时间：0.032641s] [吞吐率：30.64req/s] [内存消耗：3,324.46kb] [文件加载：93]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/index.html [ array (
+  0 => 'lang',
+  1 => 'user',
+  2 => 'wallet',
+  3 => 'money',
+  4 => 'imgs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_user` WHERE  `id` = 9115 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_money` [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_money` WHERE  `uid` = 9115 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_banner` [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_banner` ORDER BY `sort` ASC [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9115  AND `type` = 4 ORDER BY `id` DESC LIMIT 5 [ RunTime:0.009394s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:53+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/login/hongbao
+[运行时间：0.021096s] [吞吐率：47.40req/s] [内存消耗：3,182.02kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_red_packet` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_red_packet` WHERE  `userid` = 9115 ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.001699s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:56+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/index/turnout
+[运行时间：0.042789s] [吞吐率：23.37req/s] [内存消耗：3,182.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/turnout.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000460s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2018-09-12T23:59:58+08:00 ] 223.104.6.105 GET yiwuqianbao.com/mobile/Index/Turncords
+[运行时间：0.044915s] [吞吐率：22.26req/s] [内存消耗：3,338.95kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/yiwunqianbaonew/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ukip0ess8t65k5dsjdvf705lt8',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://yiwuqianbao.com/mobile/index/turnout',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO R9 Plusm A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044205 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'yiwuqianbao.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/yiwunqianbaonew/application/mobile/view/index/turncords.html [ array (
+  0 => 'wallet',
+  1 => 'res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;port=3306;dbname=yiwubao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_config` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT `close_net`,`close_net_content` FROM `zm_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_wallet_log` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `zm_wallet_log` WHERE  `userid` = 9115  AND `type` = 1 ORDER BY `id` DESC [ RunTime:0.014662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zm_user` [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10454 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10456 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10457 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10459 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 9519 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10419 LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10308 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10308 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10437 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10447 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10436 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10445 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10434 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10446 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10432 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10434 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10367 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10101 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10339 LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10211 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10334 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10333 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 9106 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10323 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 9987 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10305 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10314 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 9760 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10136 LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_img` FROM `zm_user` WHERE  `id` = 10065 LIMIT 1 [ RunTime:0.000089s ]

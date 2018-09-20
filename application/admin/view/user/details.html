@@ -1,0 +1,74 @@
+{extend name="base"/}
+{block name="content"}
+<div style="height: 20px"></div>
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">余额充值</div>
+<form class="layui-form" id="wallet">
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">原有余额</label>
+		<div class="layui-input-inline">
+				<input type="hidden" name="uid" value="{$data.uid}">
+			<input  name="wallet_num" required lay-verify="required" value="{$data.wallet_num}"  autocomplete="off" readonly="readonly" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">选择操作</label>
+		<div class="layui-input-inline">
+		<select name="atype" lay-verify="">
+			<option value="1">增加</option>
+			<option value="2">减少</option>
+			
+		  </select>
+		  </div>  
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">数量</label>
+		<div class="layui-input-inline">
+			<input  name="new_num"  value="" placeholder="" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	
+	
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="walletConfig">立即提交</button>
+		</div>
+</form>
+<hr>
+
+<div style="height: 20px"></div>
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">积分充值</div>
+<form class="layui-form" id="integral">
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">原有积分</label>
+		<div class="layui-input-inline">
+			<input type="hidden" name="uid" value="{$data.uid}">
+			<input  name="integral_num" required lay-verify="required" value="{$data.integral_num}" readonly="readonly" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">选择操作</label>
+		<div class="layui-input-inline">
+		<select name="atype" lay-verify="">
+			<option value="1">增加</option>
+			<option value="2">减少</option>
+			
+		  </select>
+		  </div>  
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">数量</label>
+		<div class="layui-input-inline">
+			<input  name="new_num" value="" placeholder="" autocomplete="off"  class="layui-input">
+		</div>
+	</div>
+	{:token()}
+	
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="integralConfig">立即提交</button>
+		</div>
+</form>
+
+
+{/block}
+	{block name="js"}<script type="text/javascript" src="__ADMIN__/js/detailsAdd.js"></script>{/block}

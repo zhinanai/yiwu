@@ -1,0 +1,94 @@
+{extend name="base"/}
+{block name="title"}
+    应用导航
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/shop.css">
+<style>
+    body{background: #f5f5f5;}
+</style>
+
+{/block}
+{block name="content"}
+
+<!-- 头部 --> 
+<div class="fxm_header">
+    <div class="w_yydaohang">{:lang('应用导航')}</div>
+</div>
+
+<!-- 内容 -->
+<div class="w_dhcontent">
+    <div class="w_dhtwo">
+        <a href="{:url('/mobile/index/exehange')}">
+            <i class="iconfont icon-jifen1" style="color: #f4b00c"></i>
+            <span>{:lang('积分兑换')}</span>
+        </a>
+        <a href="{:url('/mobile/index/Exchangerecords')}">
+            <i class="iconfont icon-jilu" style="color: #b98efa"></i>
+            <span>{:lang('兑换记录')}</span>
+        </a>
+    </div>
+    <div class="w_dhtwo">
+        <!-- <a href="###" class="notopen">
+            <i class="iconfont icon-shangcheng1" style="color: #0d45d5"></i>
+            <span>{:lang('线上商城')}</span>
+        </a> -->
+        <a href="{:url('/mobile/shop/index')}">
+            <i class="iconfont icon-shangjia1" style="color: #f3ac46"></i>
+            <span>{:lang('商家联盟')}</span>
+        </a>
+    </div>
+    <div class="w_dhtwo">
+        <a href="{:url('/mobile/User/Sharecode')}">
+            <i class="iconfont icon-tuisong-copy" style="color: #f884fc"></i>
+            <span>{:lang('分享推广')}</span>
+        </a>
+        <a href="{:url('/mobile/User/Teamdets')}">
+            <i class="iconfont icon-guanli" style="color: #8dec7d"></i>
+            <span>{:lang('团队管理')}</span>
+        </a>
+    </div>
+    <div class="w_dhtwo">
+        <a href="###" class="notopen">
+            <i class="iconfont icon-yule2" style="color: #ff4d4d"></i>
+            <span>{:lang('社群娱乐')}</span>
+        </a>
+        <a href="###"  class="notopen">
+            <i class="iconfont icon-xinwen" style="color: #82e0ff"></i>
+            <span>{:lang('行业新闻')}</span>
+        </a>
+    </div>
+</div>
+<div class="footer-fan">
+	<a href="{:url('/mobile/index/index')}">
+		<i class="iconfont icon-shouye"></i>
+		<p>{:lang('首页')}</p>
+	</a>
+	<a href="{:url('/mobile/Digitalassets/index')}">
+		<i class="iconfont icon-money"></i>
+		<p>{:lang('资产')}</p>
+    </a>
+    <a href="{:url('/mobile/index/redpay')}">
+		<i class="iconfont icon-hongbao"></i>
+		<p>{:lang('红包')}</p>
+	</a>
+	<a href="{:url('/mobile/Shop/navigation')}" class="active">
+		<i class="iconfont icon-daohang"></i>
+		<p>{:lang('导航')}</p>
+	</a>
+	<a href="{:url('/mobile/user/index')}">
+		<i class="iconfont icon-jingjirenjinglikehuxianxingcopy"></i>
+		<p>{:lang('我的')}</p>
+    </a>
+    <div class="shop_list">
+
+    </div>
+</div>
+{/block}
+{block name="js"}
+<script>
+    $(".notopen").click(function(){
+        msg_alert("{:lang('该功能暂未开放，敬请期待')}");
+    });
+</script>
+{/block}

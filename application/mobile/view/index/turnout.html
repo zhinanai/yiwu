@@ -1,0 +1,60 @@
+{extend name="base"/}
+{block name="title"}
+    转出
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/yangStyle.css">
+<style>
+    body{ background: #f5f5f5;}
+</style>
+{/block}
+{block name="content"}
+<div class="header">
+	    <div class="header_l">
+	    <a href="{:url('/mobile/Index/index')}"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>{:lang('转出')}</h2></div>
+	    <div class="header_r"><a href="{:url('/mobile/Index/Turncords')}">{:lang('转出记录')}</a></div>
+	</div>
+
+    <div class="big_width100">
+        <div class="fill_sty">
+        <p>{:lang('对方账户')}</p>
+        <input type="number" name="other_account" placeholder="{:lang('请输入手机号码')}/UID" autocomplete="off" id="phone_uid">
+        </div>
+        <div class="buttonGeoup">
+
+        <a href="#" class="not_next" id="ternNextStep">{:lang('下一步')}</a>
+        <a href="{:url('/mobile/Index/exehange')}" class="exchange">{:lang('积分兑换')}</a>
+        </div>
+    </div>
+{/block}
+{block name="js"}
+<script type="text/javascript">
+    $('#ternNextStep').on('click', function(){
+        Checku();
+    });
+    function Checku(){
+        var mobile =$.trim($('#phone_uid').val()); //账号  //.trim() 去空格判断
+        var exg = /^[1-9]\d*|0$/;
+        if(!exg.test(mobile)){
+            layer.msg('{:lang("对方账户不能为空")}');
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            url: '/mobile/Index/turnout',
+            data:{'mobile':mobile},
+            dataType: "json",
+            success: function(mes){
+                if(mes.status == 1)
+                {
+                    window.location.href = "{:url('/mobile/Index/changeout/trid/')}"+mes.data;
+                }else{
+                    msg_alert(mes.msg);
+                }
+            }
+        });
+    }
+ </script>
+{/block}

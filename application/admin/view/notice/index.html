@@ -1,0 +1,56 @@
+{extend name="base"/}
+{block name="css"}
+	<link rel="stylesheet" href="__ADMIN__/css/news.css" media="all" />
+	<style>
+		.layui-elem-quote{background: rgba(0,0, 0, 0.3);}
+		.layui-elem-quote .layui-btn{background: #009688;}
+		.layui-table thead tr{background: rgba(0,0, 0, 0.4);}
+		.layui-table{color: #fff;background: rgba(0,0, 0, 0.3);}
+		.layui-table-hover{background: rgba(0,0, 0, 0.4) !important;}
+		body{background: none !important;}
+	</style>
+	{/block}
+
+<body class="childrenBody">
+{block name="content"}
+	<blockquote class="layui-elem-quote news_search">
+		<div class="layui-inline">
+			<a class="layui-btn layui-btn-normal newsAdd_btn">添加公告</a>
+		</div>
+	</blockquote>
+	<div class="layui-form news_list">
+	  	<table class="layui-table">
+		    <colgroup>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+		    </colgroup>
+		    <thead>
+				<tr>
+					<th style="text-align:left;">公告标题</th>
+					<th style="width: 400px">导读</th>
+					<th>发布时间</th>
+					<th>操作</th>
+				</tr> 
+		    </thead>
+		    <tbody class="news_content">
+			{foreach $notice as $v}
+			<tr>
+				<td align="left">{$v.title}</td>
+				<td>{$v.read}</td>
+				<td>{$v.create_time}</td>
+				<td><a class="layui-btn layui-btn-mini news_edit" data-id="{$v.id}"><i class="iconfont icon-edit"></i> 编辑</a>
+					<a class="layui-btn layui-btn-danger layui-btn-mini news_del" data-id="{$v.id}"><i class="layui-icon"></i> 删除</a></td>
+			</tr>
+			{/foreach}
+			</tbody>
+		</table>
+	</div>
+	<div id="page"></div>
+{/block}
+	{block name="js"}<script type="text/javascript" src="__ADMIN__/js/newsList.js"></script>{/block}

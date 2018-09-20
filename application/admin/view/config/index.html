@@ -1,0 +1,31 @@
+{extend name="base"/}
+{block name="content"}
+<form class="layui-form" style="width:80%;">
+	<div class="layui-form-item">
+		<label class="layui-form-label">小程序名称</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" name="minapp_name"  lay-verify="required" value="{$config['minapp_name']}" placeholder="请输入小程序名称">
+			<input type="hidden" class="layui-input" name="id"  value="{$config['id']}">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">Appid</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" name="appid"  lay-verify="required" value="{$config['appid']}" placeholder="请输入小程序Appid">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">AppSecret</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" name="appsecret" lay-verify="required"  value="{$config['appsecret']}"placeholder="请输入小程序AppSecret">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editConfig">立即提交</button>
+			<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		</div>
+	</div>
+</form>
+{/block}
+{block name="js"}<script type="text/javascript" src="__ADMIN__/js/config.js"></script>{/block}

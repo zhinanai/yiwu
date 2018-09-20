@@ -1,0 +1,35 @@
+{extend name="base"/}
+{block name="css"}
+ <style>
+	td[data-field=head_img] .layui-table-cell {
+		height: 80px;
+	}
+	.layui-elem-quote{background: rgba(0, 0, 0, 0.1);}
+	.layui-table thead tr{background: rgba(0,0, 0, 0.4);}
+	.layui-table{color: #fff;background: rgba(0,0, 0, 0.3);}
+	.layui-table-hover{background: rgba(0,0, 0, 0.4) !important;}
+	.layui-table-body .layui-none {color: #fff;}
+	.layui-laypage span{color:#fff;}
+	.layui-laypage .layui-laypage-skip {height: 30px;line-height: 30px;color: #fff;}
+	.layui-table-page .layui-laypage input {color: #000;}
+	body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+<blockquote class="layui-elem-quote news_search">
+	<div class="layui-inline">
+		<a class="layui-btn  crowdAdd_btn">创建众筹</a>
+	</div>
+</blockquote>
+<table id="list" lay-filter="crowd" ></table>
+<script type="text/html" id="titleTpl">
+	<img src="{{d.head_img}}" width="80px"/>
+</script>
+<script type="text/html" id="barDemo">
+	<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+	<!-- <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> -->
+</script>
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__ADMIN__/js/crowdList.js"></script>
+{/block}

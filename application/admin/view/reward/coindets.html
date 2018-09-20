@@ -1,0 +1,67 @@
+{extend name="base"/}
+{block name="css"}
+<style>
+	.layui-input{display: inline-block;width: 92%;}
+	body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 115px">资产增长比例管理</div>
+<!--VIP奖励设置-->
+<form class="layui-form" id="maxform">
+	
+	
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">资产增长率</label>
+		<div class="layui-input-inline">
+			<input  name="grwoth" required lay-verify="required" value="{$growem}" placeholder="当前比例" autocomplete="off"  class="layui-input">%	
+			
+		</div>
+		
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">资产增长上限比例</label>
+		<div class="layui-input-inline">
+			<input  name="maxcoindets" required lay-verify="required" value="{$max}" placeholder="当前比例" autocomplete="off"  class="layui-input">%
+			
+		</div>
+		
+	</div>
+
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="maxcoindets">立即提交</button>
+		</div>
+	</div>
+</form>
+<hr>
+<div class="layui-bg-green" style="padding: 5px;margin-bottom: 20px;width: 100px">资产价格管理</div>
+<!--VIP奖励设置-->
+{if count($list)>0}
+<form class="layui-form" id="coindetsform">
+	{volist name="list" id="vo"}
+	
+	<div class="layui-form-item">
+		<label class="layui-form-label" style="width: 145px">{$vo.coin_name}</label>
+		<div class="layui-input-inline">
+			<input  name="{$vo.coin_name}" required lay-verify="required" value="{$vo.coin_price}" placeholder="当前价格" autocomplete="off"  class="layui-input">
+			
+		</div>
+		<!-- {$vo.cid} -->
+	</div>
+	
+	{/volist}
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="editcoindets">立即提交</button>
+		</div>
+	</div>
+</form>
+{else}
+	<span>无数据</span>
+{/if}
+
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__ADMIN__/js/reward.js"></script>
+{/block}

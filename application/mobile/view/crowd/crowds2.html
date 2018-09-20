@@ -1,0 +1,99 @@
+
+{extend name="base"/}
+{block name="title"}
+    众筹项目中心--已结束
+{/block}
+{block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/fanStyle.css"/>
+<link rel="stylesheet" href="__MOBILE__/js/layui/css/layui.css"/>
+{/block}
+
+{block name="content"}	
+	<div class="header">
+	    <div class="header_l">
+	    <a href="{:url('/mobile/Digitalassets/index')}"><img src="__MOBILE__/images/jiant.png" alt=""></a>
+	    </div>
+	    <div class="header_c"><h2>{:lang('众筹项目中心')}</h2></div>
+	    <div class="header_r"><a href="{:url('/mobile/Crowd/crowds_records')}">{:lang('记录')}</a></div>
+	</div>
+
+       <div class="big_width100">
+
+            <div class="zy_topul">
+            	
+            	<ul class="clear_wl">
+					<li>
+						<a href="{:url('/mobile/Crowd/crowds')}">
+							<img src="__MOBILE__/images/zc0-iocn.png" alt="">
+							<p>{:lang('预热中')}</p>
+						</a>
+						<div class="nj"></div>
+					</li>
+					<li>
+						<a href="{:url('/mobile/Crowd/crowds',array('step'=>1))}">
+							<img src="__MOBILE__/images/zc1-iocn.png" alt="">
+							<p>{:lang('进行中')}</p>
+						</a>
+						<div class="nj"></div>
+					</li>
+					<li>
+						<a href="{:url('/mobile/Crowd/crowds',array('step'=>2))}">
+							<img src="__MOBILE__/images/zc2-iocn.png" alt="">
+							<p class="nop">{:lang('已结束')}</p>
+						</a>
+						<div class="nj"></div>
+					</li>
+	    		</ul>
+            </div>
+
+		   {if $page == 1 }
+		   {foreach $list as $key=>$vo}
+		   <div class="zcweikais">
+			   <div class="zcweikais_top clear_wl">
+				   <img src="__MOBILE__/images/zhongctub.png" class="zcimg">
+				   <div class="zcweikais_topwz">
+					   <h3>{$vo['name']}</h3>
+					   <p class="zcxwz"><span>{:lang('每个ID限购')}{$vo['limit']}{:lang('枚')}</span>{:lang('释放比例')}：100.00%</p>
+					   <p>{:lang('接收币种')}：<span>{:lang('余额')}</span></p>
+				   </div>
+				   <div class="zcwksshij">
+					   <img src="__MOBILE__/images/naozz.png">{php}echo date("Y-m-d",$vo["start_time"]){/php}
+				   </div>
+			   </div>
+			   <div class="zcweikais_mid clear_wl">
+				   <ul>
+					   <li class="zcweikais_mid_lia"><p>{:lang('众筹数量')}<br/><span>{$vo['nums']}</span></p></li>
+					   <li class="zcweikais_mid_lib"><p>{:lang('价格')}<br/><span>1 易物币={$vo['price']}({:lang('余额')})</span></p></li>
+					   <li class="zcweikais_mid_lic"><p>{:lang('截止时间')}<br/><span class="hse">{php}echo date("Y-m-d",$vo["end_time"]){/php}</span></p></li>
+				   </ul>
+			   </div>
+			   <div class="zcweikais_bottom clear_wl">
+				   <div class="zcweikais_bottom_jdzb">
+					   <div class="layui-progress layui-progress-big " lay-showPercent="true">
+						   <div class="layui-progress-bar layui-bg-blue" lay-percent={$vo['bili']}%></div>
+					   </div>
+				   </div>
+				   <a href="javascript:;" class="zcweikais_bottom_jdzb_a">{:lang('已结束')}</a>
+
+
+			   </div>
+		   </div>
+		   {/foreach}
+		   {else /}
+		   <span style='color:#666;display: block;min-width:3rem;text-align:center;margin:1rem auto;'>{:lang('没找到相关记录')}</span>
+		   {/if}
+
+            </div>
+
+       </div>
+    {/block}
+	{block name="js"}
+		<script src="__MOBILE__/js/layui/layui.js"></script>
+	
+	   <script>
+		//注意进度条依赖 element 模块，否则无法进行正常渲染和功能性操作
+		layui.use('element', function(){
+		  var element = layui.element;
+		});
+		</script>   
+    {/block}

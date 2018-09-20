@@ -1,0 +1,45 @@
+{extend name="base" /}
+{block name="css"}
+<style>
+.layui-input-block input{color: #fff;}
+body{background-image: none !important;}
+</style>
+{/block}
+{block name="content"}
+ <form class="layui-form" id="userform" class="form-horizontal form form-builder" enctype="multipart/form-data" >
+    <div class="layui-form-item">
+        <label class="layui-form-label">名称:</label>
+        <div class="layui-input-block">
+          <input type="text" name="title" value="{$info['title']}" placeholder="请输入标题"  class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">图片:</label>
+        <div class="layui-input-block">
+            <img height="86px" width="250px" src="{$info['img']}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <input type="file" name="image" />
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">排序:</label>
+        <div class="layui-input-block">
+            <input type="text" name="sort" value="{$info['sort']}"  class="layui-input">
+        </div>
+    </div>
+    <input type="hidden" name="id" value="{$info['id']}">
+     {:token()}
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn" lay-submit lay-filter="editbanner">立即提交</button>
+        </div>
+    </div>
+ </form>
+
+{/block}
+{block name="js"}
+    <script type="text/javascript" src="__ADMIN__/js/shoptype.js"></script>
+{/block}

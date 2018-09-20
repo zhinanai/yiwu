@@ -1,0 +1,121 @@
+{extend name="base"/} {block name="title"} 已完成订单 {/block} {block name="css"}
+<link rel="stylesheet" href="__MOBILE__/css/yangStyle.css">
+<style>
+    .pagination div span {
+        padding: 0 0.3rem;
+    }
+</style>
+{/block} {block name="content"}
+<div class="header">
+    <div class="header_l">
+        <a href="{:url('/mobile/Growth/buycenter')}">
+            <img src="__MOBILE__/images/jiant.png" alt="">
+        </a>
+    </div>
+    <div class="header_c">
+        <h2>{:lang('已完成订单')}</h2>
+    </div>
+    <div class="header_r"></div>
+</div>
+
+<div class="demo">
+    {empty name="list" }
+    <ul class="pagination">
+        <div style="margin-top:1.2rem;text-align: center;color: #999">
+            <span class="rows">{:lang('没有相关记录')}</span>
+        </div>
+    </ul>
+    {else/} {foreach name="list" id="v"}
+    <div class="accordion">
+        <div class="accordion-handle">
+            <h4>
+                <p class="accmrp">{:lang('买入金额')}：{$v.money}RMB
+                    <span class="acco_con_span">{:lang('已完成')}</span>
+                </p>
+                <p>{$v.update_time}
+                    <span>{:lang('收款人')}：{$v.users.nickname}</span>
+                </p>
+            </h4>
+            <i></i>
+        </div>
+        <div class="accordion-content por">
+            <div class="acco_con_up">
+                <p>{:lang('收款人姓名')}：
+                    <span> {$v.user_nickname}</span>
+                </p>
+                <p>{:lang('手机号码')}：
+                    <span>{$v.user.mobile}</span>
+                </p>
+                <p>{:lang('开户银行')}：
+                    <span>{$v.bandcard_name}</span>
+                </p>
+                <p>{:lang('银行卡号')}：
+                    <span>{$v.bandcard_cardnumber}</span>
+                </p>
+                <p>{:lang('开户支行')}：
+                    <span>{$v.bandcard.account_opening_branch}</span>
+                </p>
+                <p>{:lang('交易金额')}：
+                    <span>{$v.money}RMB</span>
+                </p>
+                <p>{:lang('状态')}：
+                    <span class="acco_con_spana">
+                        {:lang('已完成')} </span>
+                </p>
+            </div>
+            <div class="acco_con_upa">
+                <h3>{:lang('打款截图')}</h3>
+                <div class="shangcjt">
+                    <div class="containera">
+                        <a href="/mobile/Growth/paidimg?id={$v['id']}">
+                            <img src="{$v.pic}">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/foreach} {/empty}
+    </div>
+
+
+    <!-- {empty name="list"}
+        <span>暂无任何记录</span>
+    {else}
+    {foreach name="list" item="v"}
+            <div class="accordion-handle">
+                <h4>
+                    <p class="accmrp">{$v.money}RMB<span class="acco_con_span"></span></p>
+                    <p>交易时间<span>{$v.create_time}</span></p>
+                </h4>
+                <i></i>
+            </div>
+            <div class="accordion-content por">
+                <div class="acco_con_up">
+                    <p>：<span> </span></p>
+                    <p>：<span></span></p>
+                    <p>：<span></span></p>
+                    <p>：<span></span></p>
+                    <p>：<span></span></p>
+                    <p>：{$v.money}<span>RMB</span></p>
+                    <p>：<span class="acco_con_span"></span></p>
+                </div>
+                <div class="acco_con_upa">
+                    <h3></h3>
+                    <div class="shangcjt">
+                        <div class="containera">
+                            <a href=""><img src=""  ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    {/foreach}
+    {/empty} -->
+    {/block} {block name="js"}
+    <script type="text/javascript" src="__MOBILE__/js/responsive.tabs.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.accordion').respTabs({
+                model: 'accordions'
+            });
+        }); 
+    </script> {/block}

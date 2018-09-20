@@ -1,0 +1,33 @@
+{extend name="base"/}
+{block name="css"}
+ <style>
+	td[data-field=head_img] .layui-table-cell {
+		height: 80px;
+    }
+    .layui-elem-quote{background: rgba(0,0, 0, 0.3);}
+	.layui-input{background: rgba(0,0, 0, 0.3);color: #fff;}
+	.layui-table thead tr{background: rgba(0,0, 0, 0.4);}
+	.layui-table{color: #fff;background: rgba(0,0, 0, 0.3);}
+    .layui-table-hover{background: rgba(0,0, 0, 0.4) !important;}
+    .layui-laypage span{color:#fff;}
+    .layui-laypage .layui-laypage-skip {height: 30px;line-height: 30px;color: #fff;}
+    .layui-table-page .layui-laypage input {color: #000;}
+    body{background: none !important;}
+</style> 
+{/block}
+{block name="content"}
+<blockquote class="layui-elem-quote news_search">
+	<div class="layui-inline">
+        <div class="layui-input-inline">
+            <input type="text" class="layui-input searchVal" placeholder="请输入搜索的会员id">
+        </div>
+        <a class="layui-btn search_btn" data-type="reload">搜索</a>
+    </div>
+    
+</blockquote>
+<table id="list" lay-filter="userlog" ></table>
+
+  
+{/block}
+{block name="js"}
+<script type="text/javascript" src="__ADMIN__/js/adminwallet.js"></script>{/block}

@@ -1,0 +1,85 @@
+{extend name="base" /}
+{block name="css"}
+<link rel="stylesheet" href="__ADMIN__/css/main.css" media="all" />
+<style>
+	body{background: none !important;}
+</style>
+{/block}
+{block name="content"}
+<body class="childrenBody">
+	<div class="panel_box row">
+		<div class="panel col">
+			<a href="javascript:;" data-url="{:url('admin/Recharge/wallet')}">
+				<div class="panel_icon">
+					<i class="layui-icon" data-icon="&#xe65e;">&#xe65e;</i>
+				</div>
+				<div class="panel_word newMessage">
+				
+					<cite>总余额</cite>
+					<span>{$wallet_num}</span>
+				</div>
+			</a>
+		</div>
+		<div class="panel col">
+			<a href="javascript:;" data-url="{:url('admin/Recharge/integral')}">
+				<div class="panel_icon" style="background-color:#FF5722;">
+					<i class="layui-icon" data-icon="&#xe659;">&#xe659;</i>
+				</div>
+				<div class="panel_word userAll">
+					<cite>总积分</cite>
+					<span>{$integral_num}</span>
+					
+				</div>
+			</a>
+		</div>
+		<div class="panel col">
+			<a href="javascript:;" data-url="{:url('admin/User/index')}">
+				<div class="panel_icon" style="background-color:#009688;">
+					<i class="layui-icon" data-icon="&#xe613;">&#xe613;</i>
+				</div>
+				<div class="panel_word userAll">
+					<cite>用户总数</cite>
+					<span>{$total_number}</span>
+				</div>
+			</a>
+		</div>
+		<div class="panel col">
+			<a href="javascript:;" data-url="{:url('admin/User/index')}">
+				<div class="panel_icon" style="background-color:#5FB878;">
+					<i class="layui-icon" data-icon="&#xe612;">&#xe612;</i>
+				</div>
+				<div class="panel_word imgAll">
+					<cite>新增人数</cite>
+					<span>{$num}</span>
+				</div>
+			</a>
+		</div>
+		<div class="panel col">
+			<a href="javascript:;" data-url="{:url('admin/Recharge/wallet')}">
+				<div class="panel_icon" style="background-color:#F7B824;">
+					<i class="layui-icon" data-icon="&#xe621;">&#xe621;</i>
+				</div>
+				<div class="panel_word waitNews">
+					<cite>总释放</cite>
+					<span>{$total_money}</span>
+					
+				</div>
+			</a>
+		</div>
+		<div class="panel col max_panel">
+			<a href="javascript:;" data-url="{:url('admin/Recharge/wallet')}">
+				<div class="panel_icon" style="background-color:#2F4056;">
+					<i class="layui-icon" data-icon="&#xe61d;">&#xe61d;</i>
+				</div>
+				<div class="panel_word allNews">
+					<cite>总释放</cite>
+					<em>今日总释放</em>
+				    <span>{$sameday_money}</span>
+				</div>
+			</a>
+		</div>
+	</div>
+
+{/block}
+
+	{block name="js"}<script type="text/javascript" src="__ADMIN__/js/main.js"></script>{/block}

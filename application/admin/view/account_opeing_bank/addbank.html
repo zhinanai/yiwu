@@ -1,0 +1,39 @@
+{extend name="base"/}
+{block name="content"}
+	<form   id="opeing" class="layui-form" style="width:80%;" enctype="multipart/form-data" id="userform">
+		<div class="layui-form-item">
+			<label class="layui-form-label">银行卡名称</label>
+			<div class="layui-input-block">
+				<input type="text" class="layui-input dataIntegral" name="bank_name" value=""  lay-verify="required" placeholder="请输入">
+				
+			</div>
+		</div>
+	
+		<div class="layui-form-item">
+			<label class="layui-form-label">银行logn</label>
+			<div class="layui-input-block">
+				<div class="layui-input-inline">
+						<input type="file" name="pic"  >
+						<!-- <button type="button" class="layui-btn layui-btn-normal" id="test1">上传logn</button> -->
+						<p id="demoText"></p>
+				</div>
+				<div class="layui-input-inline">
+						<img id="preview" width="80px" src="" >
+				</div>
+	
+			</div>
+			
+	</div>
+		
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<button class="layui-btn" lay-submit="" lay-filter="adduser">立即提交</button>
+				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		    </div>
+		</div>
+	</form>
+	
+	
+
+{/block}
+	{block name="js"}<script type="text/javascript" src="__ADMIN__/js/bankcardAdd.js"></script>{/block}
